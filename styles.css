@@ -6,7 +6,7 @@
     --gris: #F4F6F7;
     --negro: #111111;
 
-    /* Colores Mercado Pago nuevos */
+    /* Colores Mercado Pago */
     --mp-amarillo: #FDC300;
     --mp-azul: #002E6D;
 }
@@ -19,7 +19,7 @@ body {
     color: var(--negro);
 }
 
-/* Hero */
+/* HERO */
 .hero {
     height: 100vh;
     background: linear-gradient(
@@ -64,17 +64,14 @@ body {
     transform: scale(1.05);
 }
 
-/* Botón de Mercado Pago (logo nuevo amarillo) */
+/* BOTÓN MERCADO PAGO */
 .mp-button {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     padding: 12px 20px;
-    
-    /* colores nuevos MP */
     background: var(--mp-amarillo);
     color: var(--mp-azul);
-
     text-decoration: none;
     border-radius: 8px;
     font-weight: bold;
@@ -84,14 +81,14 @@ body {
 }
 
 .mp-button img {
-    height: 36px; /* tamaño recomendado para el logo nuevo */
+    height: 36px;
 }
 
 .mp-button:hover {
     transform: scale(1.05);
 }
 
-/* Features */
+/* FEATURES */
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -105,6 +102,7 @@ body {
     padding: 25px;
     border-radius: 12px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .feature h3 {
@@ -112,6 +110,11 @@ body {
     color: var(--azul-profundo);
 }
 
+.feature p {
+    margin: 0;
+}
+
+/* FOOTER */
 footer {
     padding: 20px;
     text-align: center;
