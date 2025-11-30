@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparencia — Ethos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<section class="hero" style="height:auto; padding:60px 20px;">
+    <h1>Transparencia</h1>
+    <p>Así se distribuyen los aportes para el proyecto de reforestación.</p>
+</section>
+
+<section class="features">
+    <div class="feature">
+        <h3>60% — Plantines</h3>
+        <p>Compra de 1.200 árboles nativos (quebracho, algarrobo, talas).</p>
+    </div>
+
+    <div class="feature">
+        <h3>25% — Mano de obra</h3>
+        <p>Equipo local encargado de plantar y mantener los árboles.</p>
+    </div>
+
+    <div class="feature">
+        <h3>10% — Transporte</h3>
+        <p>Traslado de plantines y herramientas al área de intervención.</p>
+    </div>
+
+    <div class="feature">
+        <h3>5% — Monitoreo</h3>
+        <p>Verificación trimestral del crecimiento de los árboles.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2025 Ethos — Construyendo confianza.</p>
+</footer>
+
+</body>
+</html>
