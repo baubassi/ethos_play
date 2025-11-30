@@ -121,3 +121,25 @@ footer {
     background: var(--azul-profundo);
     color: var(--blanco);
 }
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    background: var(--blanco);
+    border-bottom: 1px solid #ddd;
+}
+
+nav a {
+    color: var(--azul-profundo);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
