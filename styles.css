@@ -162,8 +162,8 @@ nav a:hover {
 
 /* LOGO ETHOS */
 .logo-ethos {
-    width: 90px;
+    width: 140px;  /* cambiá este número para agrandar o achicar */
     margin-bottom: 15px;
-    opacity: 0.9;
+    opacity: 0.95;
 }
 
