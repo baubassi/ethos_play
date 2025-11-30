@@ -1,4 +1,94 @@
-/* Features */
+/* Paleta Ethos */
+:root {
+    --azul-profundo: #1A2A6C;
+    --celeste: #2E8BC0;
+    --blanco: #FFFFFF;
+    --gris: #F4F6F7;
+    --negro: #111111;
+
+    /* Colores Mercado Pago */
+    --mp-amarillo: #FDC300;
+    --mp-azul: #002E6D;
+}
+
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--gris);
+    color: var(--negro);
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: linear-gradient(
+        to bottom right,
+        var(--azul-profundo),
+        var(--celeste)
+    );
+    color: var(--blanco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+/* CTA principal */
+.cta {
+    background: var(--blanco);
+    color: var(--azul-profundo);
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    transition: transform 0.15s ease;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+}
+
+/* BOTÓN MERCADO PAGO */
+.mp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: var(--mp-amarillo);
+    color: var(--mp-azul);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.15s ease;
+    margin-top: 10px;
+}
+
+.mp-button img {
+    height: 36px;
+}
+
+.mp-button:hover {
+    transform: scale(1.05);
+}
+
+/* FEATURES */
 .features {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -22,4 +112,12 @@
 
 .feature p {
     margin: 0;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--azul-profundo);
+    color: var(--blanco);
 }
