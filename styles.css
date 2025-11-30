@@ -122,6 +122,23 @@ footer {
     color: var(--blanco);
 }
 
+/* Links del footer */
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: var(--blanco);
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
 
 nav {
     display: flex;
@@ -142,4 +159,5 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 
