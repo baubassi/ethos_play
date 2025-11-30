@@ -1,123 +1,48 @@
-/* Paleta Ethos */
-:root {
-    --azul-profundo: #1A2A6C;
-    --celeste: #2E8BC0;
-    --blanco: #FFFFFF;
-    --gris: #F4F6F7;
-    --negro: #111111;
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethos.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    /* Colores Mercado Pago */
-    --mp-amarillo: #FDC300;
-    --mp-azul: #002E6D;
-}
+    <!-- Sección principal -->
+    <section class="hero">
+        <h1>Ethos.</h1>
+        <p>Construyendo credibilidad a través de transparencia, trazabilidad y legitimidad.</p>
+        
+        <a href="#" class="cta">Comenzar</a>
 
-/* Reset básico */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: var(--gris);
-    color: var(--negro);
-}
+        <!-- Botón Mercado Pago (logo nuevo amarillo) -->
+        <a href="TU_LINK_DE_PAGO" target="_blank" class="mp-button">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Mercado_Pago_Logo.png/512px-Mercado_Pago_Logo.png"
+                 alt="Mercado Pago">
+            Donar con Mercado Pago
+        </a>
+    </section>
 
-/* HERO */
-.hero {
-    height: 100vh;
-    background: linear-gradient(
-        to bottom right,
-        var(--azul-profundo),
-        var(--celeste)
-    );
-    color: var(--blanco);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
-}
+    <!-- Features -->
+    <section class="features">
+        <div class="feature">
+            <h3>Transparencia</h3>
+            <p>Cada contribución puede verificarse en tiempo real.</p>
+        </div>
+        <div class="feature">
+            <h3>Trazabilidad</h3>
+            <p>Seguimiento claro desde el aporte hasta el impacto final.</p>
+        </div>
+        <div class="feature">
+            <h3>Legitimidad</h3>
+            <p>Respaldo de quienes confían y avalan nuestro proceso.</p>
+        </div>
+    </section>
 
-.hero h1 {
-    font-size: 4rem;
-    margin-bottom: 10px;
-}
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Ethos — Construyendo confianza.</p>
+    </footer>
 
-.hero p {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
-    max-width: 500px;
-}
-
-/* CTA principal */
-.cta {
-    background: var(--blanco);
-    color: var(--azul-profundo);
-    padding: 12px 24px;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 1.1rem;
-    margin-bottom: 15px;
-    transition: transform 0.15s ease;
-}
-
-.cta:hover {
-    transform: scale(1.05);
-}
-
-/* BOTÓN MERCADO PAGO */
-.mp-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 12px 20px;
-    background: var(--mp-amarillo);
-    color: var(--mp-azul);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    transition: transform 0.15s ease;
-    margin-top: 10px;
-}
-
-.mp-button img {
-    height: 36px;
-}
-
-.mp-button:hover {
-    transform: scale(1.05);
-}
-
-/* FEATURES */
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 60px 20px;
-    background: var(--blanco);
-}
-
-.feature {
-    background: var(--gris);
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.feature h3 {
-    margin-bottom: 10px;
-    color: var(--azul-profundo);
-}
-
-.feature p {
-    margin: 0;
-}
-
-/* FOOTER */
-footer {
-    padding: 20px;
-    text-align: center;
-    background: var(--azul-profundo);
-    color: var(--blanco);
-}
+</body>
+</html>
