@@ -43,6 +43,7 @@ body {
     max-width: 500px;
 }
 
+/* CTA principal */
 .cta {
     background: var(--blanco);
     color: var(--azul-profundo);
@@ -51,6 +52,36 @@ body {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.1rem;
+    margin-bottom: 15px;
+    transition: transform 0.15s ease;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+}
+
+/* Botón de Mercado Pago */
+.mp-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #009EE3; /* color oficial Mercado Pago */
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.15s ease;
+    margin-top: 10px;
+}
+
+.mp-button img {
+    height: 28px;
+}
+
+.mp-button:hover {
+    transform: scale(1.05);
 }
 
 /* Features */
