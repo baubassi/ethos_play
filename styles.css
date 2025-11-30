@@ -160,4 +160,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* LOGO ETHOS */
+.logo-ethos {
+    width: 90px;
+    margin-bottom: 15px;
+    opacity: 0.9;
+}
 
