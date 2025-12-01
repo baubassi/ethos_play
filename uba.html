@@ -15,44 +15,120 @@
     <h1 class="titulo-area">Universidad de Buenos Aires</h1>
     <p class="subtitulo-area">Programas y líneas de donación disponibles dentro de la UBA.</p>
 
-    <!-- PROYECTOS -->
     <div class="instituciones-grid">
 
         <!-- Proyecto 1 -->
         <div class="institucion-card">
             <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png"
                  alt="Logo proyecto" class="institucion-logo">
+
             <h3>Becas para estudiantes</h3>
             <p>Apoyo económico para alumnos en situación de vulnerabilidad.</p>
+
+            <div class="donar-btn-box">
+                <div class="dropdown">
+                    <button class="dropdown-btn">Ayudar ▼</button>
+                    <div class="dropdown-content">
+                        <a href="LINK_MP">
+                            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png" alt="">
+                        </a>
+                        <a href="LINK_UALA">
+                            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png" alt="">
+                        </a>
+                        <a href="LINK_DEBITO">💳 Débito</a>
+                        <a href="LINK_CREDITO">💳 Crédito</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Proyecto 2 -->
         <div class="institucion-card">
             <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png"
                  alt="Logo proyecto" class="institucion-logo">
+
             <h3>Bibliotecas y materiales</h3>
             <p>Compra de libros, renovación de espacios y acceso a recursos.</p>
+
+            <div class="donar-btn-box">
+                <div class="dropdown">
+                    <button class="dropdown-btn">Ayudar ▼</button>
+                    <div class="dropdown-content">
+                        <a href="LINK_MP">
+                            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png" alt="">
+                        </a>
+                        <a href="LINK_UALA">
+                            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png" alt="">
+                        </a>
+                        <a href="LINK_DEBITO">💳 Débito</a>
+                        <a href="LINK_CREDITO">💳 Crédito</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Proyecto 3 -->
         <div class="institucion-card">
             <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png"
                  alt="Logo proyecto" class="institucion-logo">
+
             <h3>Equipamiento tecnológico</h3>
             <p>Computadoras, software y aulas digitales para mejorar el aprendizaje.</p>
+
+            <div class="donar-btn-box">
+                <div class="dropdown">
+                    <button class="dropdown-btn">Ayudar ▼</button>
+                    <div class="dropdown-content">
+                        <a href="LINK_MP">
+                            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png" alt="">
+                        </a>
+                        <a href="LINK_UALA">
+                            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png" alt="">
+                        </a>
+                        <a href="LINK_DEBITO">💳 Débito</a>
+                        <a href="LINK_CREDITO">💳 Crédito</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Proyecto 4 -->
         <div class="institucion-card">
             <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png"
                  alt="Logo proyecto" class="institucion-logo">
+
             <h3>Fondo de investigación</h3>
             <p>Apoyo a proyectos científicos en diversas facultades.</p>
+
+            <div class="donar-btn-box">
+                <div class="dropdown">
+                    <button class="dropdown-btn">Ayudar ▼</button>
+                    <div class="dropdown-content">
+                        <a href="LINK_MP">
+                            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png" alt="">
+                        </a>
+                        <a href="LINK_UALA">
+                            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png" alt="">
+                        </a>
+                        <a href="LINK_DEBITO">💳 Débito</a>
+                        <a href="LINK_CREDITO">💳 Crédito</a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 
 </section>
+
+<script>
+document.querySelectorAll(".dropdown-btn").forEach(btn => {
+    btn.addEventListener("click", function () {
+        const dropdown = this.parentElement;
+        dropdown.classList.toggle("show");
+    });
+});
+</script>
 
 </body>
 </html>
