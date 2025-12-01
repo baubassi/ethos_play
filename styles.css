@@ -167,3 +167,32 @@ nav a:hover {
     opacity: 0.95;
 }
 
+/* Logo ETHOS hecho solo con CSS */
+.ethos-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.ethos-logo .bars {
+    display: flex;
+    gap: 8px;
+}
+
+.ethos-logo .bars span {
+    width: 12px;                  /* ancho de cada barra */
+    height: 80px;                 /* alto de cada barra */
+    background: white;            /* color de las barras */
+    border-radius: 2px;
+}
+
+.ethos-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 600;
+    color: white;                 /* texto blanco como pediste */
+    letter-spacing: 2px;
+}
+
+
