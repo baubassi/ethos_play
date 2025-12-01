@@ -122,13 +122,34 @@
 </section>
 
 <script>
+let currentMenu = null;
+
 document.querySelectorAll(".dropdown-btn").forEach(btn => {
-    btn.addEventListener("click", function () {
-        const dropdown = this.parentElement;
-        dropdown.classList.toggle("show");
+    btn.addEventListener("click", function (e) {
+        e.stopPropagation();
+
+        // cerrar menú anterior
+        if (currentMenu) currentMenu.style.display = "none";
+
+        const menu = btn.parentElement.nextElementSibling;
+        currentMenu = menu;
+
+        // posición exacta bajo el botón
+        const rect = btn.getBoundingClientRect();
+        menu.style.top = (rect.bottom + window.scrollY + 8) + "px";
+        menu.style.left = (rect.left + rect.width / 2) + "px";
+        menu.style.transform = "translateX(-50%)";
+        
+        menu.style.display = "block";
     });
 });
+
+// cerrar dropdown al hacer click afuera
+document.addEventListener("click", () => {
+    if (currentMenu) currentMenu.style.display = "none";
+});
 </script>
+
 
 </body>
 </html>
