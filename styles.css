@@ -417,3 +417,8 @@ body {
 .donar-btn-box .dropdown.show .dropdown-content {
     display: block;
 }
+
+
+.institucion-card {
+    overflow: visible !important;
+}
