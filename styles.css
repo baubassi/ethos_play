@@ -7,7 +7,7 @@
     --negro: #111111;
 
     /* Colores Mercado Pago */
-    --mp-amarillo: #FFE066;
+    --mp-amarillo: #FEE275;
     --mp-azul: #002E6D;
 }
 
@@ -186,8 +186,8 @@ nav a:hover {
 }
 
 .ethos-logo .bars span {
-    width: 12px;                  /* ancho de cada barra */
-    height: 80px;                 /* alto de cada barra */
+    width: 14px;                  /* ancho de cada barra */
+    height: 75px;                 /* alto de cada barra */
     background: white;            /* color de las barras */
     border-radius: 2px;
 }
