@@ -159,12 +159,28 @@ body {
     background: var(--gris);
 }
 
-/* LOGOS UNIFICADOS EN EL DROPDOWN */
-.dropdown-content img {
-    height: 45px;        /* → Cambiá este número si querés */
-    width: auto;
+/* Normalización REAL de logos del dropdown */
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 14px 16px;
+}
+
+.dropdown-icon {
+    width: 48px;      /* marco fijo para TODOS los logos */
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-icon img {
+    max-width: 80%;   /* escala inteligente */
+    max-height: 80%;
     object-fit: contain;
 }
+
 
 
 /* ================================
