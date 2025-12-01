@@ -18,7 +18,7 @@
 
     <div class="instituciones-grid">
 
-        <!-- TARJETA -->
+        <!-- TARJETA 1 -->
         <div class="institucion-card">
             <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png" class="institucion-logo">
 
@@ -26,17 +26,15 @@
             <p>Apoyo económico para alumnos en situación de vulnerabilidad.</p>
 
             <div class="donar-btn-box">
-                <button class="dropdown-btn">Ayudar ▼</button>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Ayudar ▼</button>
 
-                <div class="dropdown-content">
-                    <a href="LINK_MP">
-                        <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png">
-                    </a>
-                    <a href="LINK_UALA">
-                        <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png">
-                    </a>
-                    <a href="LINK_DEBITO">💳 Débito</a>
-                    <a href="LINK_CREDITO">💳 Crédito</a>
+                    <div class="dropdown-content">
+                        <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
+                        <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
+                        <a href="LINK_DEBITO">💳 Débito</a>
+                        <a href="LINK_CREDITO">💳 Crédito</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,13 +47,15 @@
             <p>Compra de libros, renovación de espacios y acceso a recursos.</p>
 
             <div class="donar-btn-box">
-                <button class="dropdown-btn">Ayudar ▼</button>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Ayudar ▼</button>
 
-                <div class="dropdown-content">
-                    <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
-                    <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
-                    <a href="LINK_DEBITO">💳 Débito</a>
-                    <a href="LINK_CREDITO">💳 Crédito</a>
+                    <div class="dropdown-content">
+                        <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
+                        <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
+                        <a href="LINK_DEBITO">💳 Débito</a>
+                        <a href="LINK_CREDITO">💳 Crédito</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -68,13 +68,15 @@
             <p>Computadoras, software y aulas digitales para mejorar el aprendizaje.</p>
 
             <div class="donar-btn-box">
-                <button class="dropdown-btn">Ayudar ▼</button>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Ayudar ▼</button>
 
-                <div class="dropdown-content">
-                    <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
-                    <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
-                    <a href="LINK_DEBITO">💳 Débito</a>
-                    <a href="LINK_CREDITO">💳 Crédito</a>
+                    <div class="dropdown-content">
+                        <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
+                        <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
+                        <a href="LINK_DEBITO">💳 Débito</a>
+                        <a href="LINK_CREDITO">💳 Crédito</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,13 +89,15 @@
             <p>Apoyo a proyectos científicos en diversas facultades.</p>
 
             <div class="donar-btn-box">
-                <button class="dropdown-btn">Ayudar ▼</button>
+                <div class="dropdown">
+                    <button class="dropdown-btn">Ayudar ▼</button>
 
-                <div class="dropdown-content">
-                    <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
-                    <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
-                    <a href="LINK_DEBITO">💳 Débito</a>
-                    <a href="LINK_CREDITO">💳 Crédito</a>
+                    <div class="dropdown-content">
+                        <a href="LINK_MP"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png"></a>
+                        <a href="LINK_UALA"><img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uala_logo.png"></a>
+                        <a href="LINK_DEBITO">💳 Débito</a>
+                        <a href="LINK_CREDITO">💳 Crédito</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -109,21 +113,17 @@ document.querySelectorAll(".dropdown-btn").forEach(btn => {
     btn.addEventListener("click", function (e) {
         e.stopPropagation();
 
-        const dropdown = btn.closest(".dropdown");  
-        const menu = dropdown.querySelector(".dropdown-content");
+        const menu = btn.parentElement.querySelector(".dropdown-content");
 
-        // cerrar cualquier menú abierto
         if (currentMenu && currentMenu !== menu) {
             currentMenu.classList.remove("show");
         }
 
-        // toggle del menú actual
         menu.classList.toggle("show");
         currentMenu = menu.classList.contains("show") ? menu : null;
     });
 });
 
-// cerrar si clic afuera
 document.addEventListener("click", () => {
     if (currentMenu) {
         currentMenu.classList.remove("show");
@@ -131,3 +131,6 @@ document.addEventListener("click", () => {
     }
 });
 </script>
+
+</body>
+</html>
