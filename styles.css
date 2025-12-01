@@ -257,28 +257,3 @@ body {
     }
 }
 
-
-/* Ualá más chico */
-.logo-uala {
-    max-width: 60% !important;
-    max-height: 60% !important;
-}
-
-/* Mercado Pago más grande */
-.logo-mp {
-    max-width: 90% !important;
-    max-height: 90% !important;
-}
-
-/* Crédito más grande */
-.logo-credito {
-    max-width: 90% !important;
-    max-height: 90% !important;
-}
-
-/* Débito más grande */
-.logo-debito {
-    max-width: 90% !important;
-    max-height: 90% !important;
-}
-
