@@ -364,14 +364,13 @@ body {
     margin-top: 20px;
     width: 100%;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
+    position: relative; /* clave */
 }
 
 .donar-btn-box .dropdown {
     position: relative;
     display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .donar-btn-box .dropdown-btn {
@@ -384,19 +383,22 @@ body {
     font-size: 0.95rem;
 }
 
+/* MENÚ DESPLEGABLE (corregido) */
 .donar-btn-box .dropdown-content {
     display: none;
     position: absolute;
     top: 110%;
-    right: 0;
+    left: 50%;                  /* centra bajo el botón */
+    transform: translateX(-50%);
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    min-width: 170px;
+    min-width: 200px;           /* ancho más consistente */
     padding: 10px 0;
-    z-index: 100;
+    z-index: 9999;              /* NO SE TAPA MÁS */
 }
 
+/* Opciones dentro del menú */
 .donar-btn-box .dropdown-content a {
     display: block;
     padding: 10px 15px;
@@ -404,6 +406,14 @@ body {
     color: var(--azul-profundo);
 }
 
+/* Ajuste para logos */
+.donar-btn-box .dropdown-content a img {
+    width: 120px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Mostrar menú */
 .donar-btn-box .dropdown.show .dropdown-content {
     display: block;
 }
