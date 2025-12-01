@@ -286,7 +286,7 @@ nav a:hover {
 
 /* Botón AYUDAR flotando en la esquina */
 .corner-button {
-    position: absolute;    /* NO es fijo, no molesta scroll */
+    position: fixed;  
     top: 20px;
     right: 20px;
     z-index: 999;
