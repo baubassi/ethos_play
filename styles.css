@@ -260,3 +260,25 @@ nav a:hover {
     opacity: 0.85;
 }
 
+
+.back-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--azul-profundo);
+    background: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: 1px solid #cccccc;
+    font-weight: bold;
+    transition: 0.15s ease;
+}
+
+.back-button:hover {
+    background: #f0f0f0;
+    transform: scale(1.03);
+}
+
+
