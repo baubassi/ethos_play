@@ -285,3 +285,13 @@ body {
     letter-spacing: 3px;
 }
 
+
+/* Limitar tamaño de logos dentro del dropdown */
+.dropdown-content img {
+    width: 120px;       /* tamaño ideal */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+
