@@ -76,27 +76,23 @@ body {
     border-radius: 8px;
     font-weight: bold;
     font-size: 1.1rem;
+    text-transform: uppercase;   /* AYUDAR en mayúsculas */
     transition: transform 0.15s ease;
     margin-top: 10px;
 }
+
+/* Imagen del logo dentro del botón */
 .mp-button img {
+    height: 44px;                /* <-- Ajustá el tamaño acá */
     background: var(--mp-amarillo);
     padding: 6px;
     border-radius: 4px;
 }
 
-.mp-button {
-    text-transform: uppercase;
-}
-
-
-.mp-button img {
-    height: 36px;
-}
-
 .mp-button:hover {
     transform: scale(1.05);
 }
+
 
 /* FEATURES */
 .features {
