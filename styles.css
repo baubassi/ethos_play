@@ -370,7 +370,7 @@ body {
 }
 
 .donar-btn-box .dropdown {
-    position: relative;
+    position: relative; /* contenedor del botón */
 }
 
 /* Botón */
@@ -384,27 +384,33 @@ body {
     font-size: 0.95rem;
 }
 
-/* Dropdown: centrado perfecto y SIN taparse */
+/* Dropdown centrado EXACTO debajo del botón */
 .donar-btn-box .dropdown-content {
     display: none;
-    position: absolute;
-    top: 110%;
-    left: 50%;                  /* CENTRA BAJO EL BOTÓN */
-    transform: translateX(-50%);
+    position: absolute;          /* se posiciona dentro de la tarjeta */
+    top: 110%;                   /* justo abajo del botón */
+    left: 50%;                   /* centro horizontal */
+    transform: translateX(-50%); /* centrar */
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    min-width: 200px;
+    min-width: 220px;
     padding: 10px 0;
-    z-index: 999999;            /* NO SE TAPA */
+    z-index: 9999;               /* por encima del resto */
+}
+
+/* Mostrar menú */
+.donar-btn-box .dropdown.show .dropdown-content {
+    display: block;
 }
 
 /* Items */
 .donar-btn-box .dropdown-content a {
     display: block;
-    padding: 10px 15px;
+    padding: 12px 15px;
     text-decoration: none;
     color: var(--azul-profundo);
+    font-weight: 500;
 }
 
 /* Logos */
@@ -414,26 +420,7 @@ body {
     margin: 10px auto;
 }
 
-.donar-btn-box .dropdown.show .dropdown-content {
-    display: block;
-}
-
-
+/* Permitir que el menú se expanda fuera de la tarjeta */
 .institucion-card {
     overflow: visible !important;
 }
-
-
-.donar-btn-box .dropdown-content {
-    display: none;
-    position: fixed;   /* <-- ANTES: absolute */
-    left: 50%;
-    transform: translateX(-50%);
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    min-width: 220px;
-    padding: 10px 0;
-    z-index: 999999999; /* por encima de todo */
-}
-
