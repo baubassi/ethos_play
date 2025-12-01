@@ -243,3 +243,12 @@ nav a:hover {
 .donate-card p {
     font-size: 0.95rem;
 }
+
+
+
+.corner-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
