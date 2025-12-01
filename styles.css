@@ -159,11 +159,13 @@ body {
     background: var(--gris);
 }
 
+/* LOGOS UNIFICADOS EN EL DROPDOWN */
 .dropdown-content img {
-    width: 36px;
-    height: auto;
+    height: 45px;        /* → Cambiá este número si querés */
+    width: auto;
     object-fit: contain;
 }
+
 
 /* ================================
    BACK BUTTON
