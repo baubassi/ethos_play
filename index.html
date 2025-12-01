@@ -31,6 +31,8 @@
     
     <a href="donar.html" class="cta">Comenzar</a>
 
+    <h2 id="mensaje-dinamico"></h2>
+
 </section>
 
     
@@ -65,6 +67,16 @@
     </div>
 </footer>
 
+<script>
+  const mensajes = [
+    "Recibí reportes claros y auditables para seguir el impacto de cada contribución.",
+    "Transparencia total desde el primer segundo: cada aporte queda registrado y verificado."
+  ];
+
+  const elegido = mensajes[Math.floor(Math.random() * mensajes.length)];
+
+  document.getElementById("mensaje-dinamico").innerText = elegido;
+</script>
 
 </body>
 </html>
