@@ -324,9 +324,9 @@ body {
 
 .instituciones-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(2, 1fr); /* SIEMPRE 2 COLUMNAS */
     gap: 25px;
-    max-width: 900px;
+    max-width: 800px;
     margin: auto;
 }
 
