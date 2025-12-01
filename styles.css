@@ -83,7 +83,7 @@ body {
 
 /* Imagen del logo dentro del botón */
 .mp-button img {
-    height: 44px;                /* <-- Ajustá el tamaño acá */
+    height: 50px;                /* <-- Ajustá el tamaño acá */
     background: var(--mp-amarillo);
     padding: 6px;
     border-radius: 4px;
