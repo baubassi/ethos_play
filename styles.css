@@ -74,9 +74,9 @@ body {
     color: var(--mp-azul);
     text-decoration: none;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-transform: uppercase;   /* AYUDAR en mayúsculas */
+    font-size: 1.3rem;   /* antes 1rem o 1.1rem */
+    font-weight: 800;    /* más grosor */
+    text-transform: uppercase;
     transition: transform 0.15s ease;
     margin-top: 10px;
 }
