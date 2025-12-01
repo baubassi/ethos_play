@@ -361,17 +361,18 @@ body {
 /* --- BOTÓN AYUDAR DENTRO DE CADA PROYECTO --- */
 
 .donar-btn-box {
-    margin-top: 15px;
-    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
 }
 
 .donar-btn-box .dropdown {
     position: relative;
-    display: flex;          /* <-- LA SOLUCIÓN */
-    justify-content: center;
-    width: 100%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 .donar-btn-box .dropdown-btn {
     background: var(--azul-profundo);
@@ -403,24 +404,6 @@ body {
     color: var(--azul-profundo);
 }
 
-.donar-btn-box .dropdown-content a img {
-    width: 120px;
-    display: block;
-    margin: auto;
-}
-
 .donar-btn-box .dropdown.show .dropdown-content {
     display: block;
 }
-
-.donar-btn-box {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;   /* CENTRA HORIZONTALMENTE */
-    align-items: center;
-    width: 100%;
-}
-
-
-
-
