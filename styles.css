@@ -422,3 +422,18 @@ body {
 .institucion-card {
     overflow: visible !important;
 }
+
+
+.donar-btn-box .dropdown-content {
+    display: none;
+    position: fixed;   /* <-- ANTES: absolute */
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 220px;
+    padding: 10px 0;
+    z-index: 999999999; /* por encima de todo */
+}
+
