@@ -294,4 +294,11 @@ body {
     margin: 10px auto;
 }
 
+#mensaje-dinamico {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    color: var(--azul-profundo); /* o el color que uses */
+}
+
+
 
