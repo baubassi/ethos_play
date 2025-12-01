@@ -365,15 +365,10 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    position: relative; /* clave */
 }
 
-.donar-btn-box .dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.donar-btn-box .dropdown-btn {
+/* Botón */
+.dropdown-btn {
     background: var(--azul-profundo);
     color: white;
     border: none;
@@ -383,37 +378,28 @@ body {
     font-size: 0.95rem;
 }
 
-/* MENÚ DESPLEGABLE (corregido) */
-.donar-btn-box .dropdown-content {
-    display: none;
+/* Dropdown global flotante */
+.dropdown-content-global {
     position: absolute;
-    top: 110%;
-    left: 50%;                  /* centra bajo el botón */
-    transform: translateX(-50%);
+    display: none;
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    min-width: 200px;           /* ancho más consistente */
-    padding: 10px 0;
-    z-index: 9999;              /* NO SE TAPA MÁS */
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    padding: 15px 0;
+    min-width: 200px;
+    z-index: 999999;
 }
 
-/* Opciones dentro del menú */
-.donar-btn-box .dropdown-content a {
+/* items */
+.dropdown-content-global a {
     display: block;
-    padding: 10px 15px;
+    padding: 12px 20px;
     text-decoration: none;
     color: var(--azul-profundo);
 }
 
-/* Ajuste para logos */
-.donar-btn-box .dropdown-content a img {
-    width: 120px;
+.dropdown-content-global img {
+    width: 130px;
     display: block;
     margin: 10px auto;
-}
-
-/* Mostrar menú */
-.donar-btn-box .dropdown.show .dropdown-content {
-    display: block;
 }
