@@ -168,11 +168,8 @@ body {
 }
 
 .dropdown-icon {
-    width: 48px;      /* marco fijo para TODOS los logos */
-    height: 48px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 32px;   /* antes 48px */
+    height: 32px;  /* antes 48px */
 }
 
 .dropdown-icon img {
