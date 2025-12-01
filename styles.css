@@ -85,6 +85,11 @@ body {
     border-radius: 4px;
 }
 
+.mp-button {
+    text-transform: uppercase;
+}
+
+
 .mp-button img {
     height: 36px;
 }
