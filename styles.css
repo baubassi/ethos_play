@@ -79,6 +79,11 @@ body {
     transition: transform 0.15s ease;
     margin-top: 10px;
 }
+.mp-button img {
+    background: var(--mp-amarillo);
+    padding: 6px;
+    border-radius: 4px;
+}
 
 .mp-button img {
     height: 36px;
