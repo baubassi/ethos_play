@@ -1,4 +1,6 @@
-/* Paleta Ethos */
+/* ================================
+   PALETA ETHOS
+================================ */
 :root {
     --azul-profundo: #1A2A6C;
     --celeste: #2E8BC0;
@@ -11,7 +13,9 @@
     --mp-azul: #002E6D;
 }
 
-/* Reset básico */
+/* ================================
+   RESET
+================================ */
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -19,14 +23,12 @@ body {
     color: var(--negro);
 }
 
-/* HERO */
+/* ================================
+   HERO
+================================ */
 .hero {
     height: 100vh;
-    background: linear-gradient(
-        to bottom right,
-        var(--azul-profundo),
-        var(--celeste)
-    );
+    background: linear-gradient(to bottom right, var(--azul-profundo), var(--celeste));
     color: var(--blanco);
     display: flex;
     flex-direction: column;
@@ -56,7 +58,6 @@ body {
     font-weight: bold;
     text-decoration: none;
     font-size: 1.1rem;
-    margin-bottom: 15px;
     transition: transform 0.15s ease;
 }
 
@@ -64,7 +65,9 @@ body {
     transform: scale(1.05);
 }
 
-/* BOTÓN MERCADO PAGO */
+/* ================================
+   BOTÓN MERCADO PAGO (estático o corner)
+================================ */
 .mp-button {
     display: inline-flex;
     align-items: center;
@@ -74,16 +77,14 @@ body {
     color: var(--mp-azul);
     text-decoration: none;
     border-radius: 8px;
-    font-size: 1.3rem;   /* antes 1rem o 1.1rem */
-    font-weight: 800;    /* más grosor */
+    font-size: 1.3rem;
+    font-weight: 800;
     text-transform: uppercase;
     transition: transform 0.15s ease;
-    margin-top: 10px;
 }
 
-/* Imagen del logo dentro del botón */
 .mp-button img {
-    height: 50px;                /* <-- Ajustá el tamaño acá */
+    height: 50px;
     background: var(--mp-amarillo);
     padding: 6px;
     border-radius: 4px;
@@ -93,159 +94,9 @@ body {
     transform: scale(1.05);
 }
 
-
-/* FEATURES */
-.features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
-    padding: 60px 20px;
-    background: var(--blanco);
-}
-
-.feature {
-    background: var(--gris);
-    padding: 25px;
-    border-radius: 12px;
-    text-align: center;
-    box-sizing: border-box;
-}
-
-.feature h3 {
-    margin-bottom: 10px;
-    color: var(--azul-profundo);
-}
-
-.feature p {
-    margin: 0;
-}
-
-/* FOOTER */
-footer {
-    padding: 20px;
-    text-align: center;
-    background: var(--azul-profundo);
-    color: var(--blanco);
-}
-
-/* Links del footer */
-.footer-links {
-    margin-top: 10px;
-}
-
-.footer-links a {
-    color: var(--blanco);
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    background: var(--blanco);
-    border-bottom: 1px solid #ddd;
-}
-
-nav a {
-    color: var(--azul-profundo);
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* LOGO ETHOS */
-.logo-ethos {
-    width: 200px;  /* cambiá este número para agrandar o achicar */
-    margin-bottom: 15px;
-    opacity: 0.95;
-}
-
-/* Logo ETHOS hecho solo con CSS */
-.ethos-logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.ethos-logo .bars {
-    display: flex;
-    gap: 8px;
-}
-
-.ethos-logo .bars span {
-    width: 14px;                  /* ancho de cada barra */
-    height: 75px;                 /* alto de cada barra */
-    background: white;            /* color de las barras */
-    border-radius: 2px;
-}
-
-.ethos-text {
-    font-family: 'Inter', sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    color: white;                 /* texto blanco como pediste */
-    letter-spacing: 2px;
-}
-
-
-/* Página de donación */
-.donate-container {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.donate-title {
-    font-size: 2.2rem;
-    color: var(--azul-profundo);
-    margin-bottom: 40px;
-}
-
-.donate-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* ← SIEMPRE 2 columnas */
-    gap: 25px;
-    max-width: 800px;
-    margin: auto;
-}
-
-
-.donate-card {
-    background: var(--gris);
-    padding: 30px 20px;
-    border-radius: 14px;
-    text-decoration: none;
-    color: var(--azul-profundo);
-    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    transition: transform .15s ease, box-shadow .15s ease;
-}
-
-.donate-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
-}
-
-.donate-card h2 {
-    margin-bottom: 10px;
-}
-
-.donate-card p {
-    font-size: 0.95rem;
-}
-
+/* ================================
+   CORNER BUTTON (AYUDAR)
+================================ */
 .corner-button {
     position: fixed;
     top: 20px;
@@ -253,14 +104,70 @@ nav a:hover {
     z-index: 999;
 }
 
-.icon-donar {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 15px;
-    opacity: 0.85;
+/* ================================
+   DROPDOWN
+================================ */
+.dropdown {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
 }
 
+.dropdown-btn {
+    background: var(--mp-amarillo);
+    color: var(--mp-azul);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    background: white;
+    min-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: var(--azul-profundo);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.dropdown-content a:hover {
+    background: var(--gris);
+}
+
+.dropdown-content img {
+    width: 36px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* ================================
+   BACK BUTTON
+================================ */
 .back-button {
     position: fixed;
     top: 20px;
@@ -281,100 +188,53 @@ nav a:hover {
     transform: scale(1.03);
 }
 
-
-
-
-/* Botón AYUDAR flotando en la esquina */
-.corner-button {
-    position: fixed;  
-    top: 20px;
-    right: 20px;
-    z-index: 999;
-}
-
-/* Ajuste para que el botón no tape el título */
+/* ================================
+   PÁGINA DONAR
+================================ */
 .donate-container {
-    padding-top: 90px;
+    padding: 90px 20px 60px; /* compensación por el botón fijo */
+    text-align: center;
 }
 
-/* Ajustes responsive para celular */
-@media (max-width: 480px) {
-    .corner-button {
-        top: 10px;
-        right: 10px;
-        transform: scale(0.8);
-    }
-
-    .mp-button {
-        padding: 8px 12px;
-        font-size: 0.9rem;
-    }
-
-    .mp-button img {
-        height: 28px;
-    }
+.donate-title {
+    font-size: 2.2rem;
+    color: var(--azul-profundo);
+    margin-bottom: 40px;
 }
 
-
-/* Dropdown general */
-.dropdown {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 999;
+.donate-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 800px;
+    margin: auto;
 }
 
-/* Botón principal */
-.dropdown-btn {
-    background: var(--mp-amarillo);
-    color: var(--mp-azul);
-    border: none;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-/* Contenedor del menú desplegable */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    margin-top: 10px;
-    background: white;
-    min-width: 220px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    overflow: hidden;
-}
-
-/* Elementos dentro del desplegable */
-.dropdown-content a {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 14px;
+.donate-card {
+    background: var(--gris);
+    padding: 30px 20px;
+    border-radius: 14px;
     text-decoration: none;
     color: var(--azul-profundo);
-    font-weight: bold;
-    font-size: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: transform .15s ease, box-shadow .15s ease;
 }
 
-.dropdown-content a:hover {
-    background: var(--gris);
+.donate-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
 }
 
-/* Iconos */
-.dropdown-content img {
-    height: 26px;
-}
+/* ================================
+   RESPONSIVE
+================================ */
+@media (max-width: 480px) {
+    .dropdown {
+        top: 10px;
+        right: 10px;
+    }
 
-/* Mostrar cuando está activo */
-.dropdown.show .dropdown-content {
-    display: block;
+    .dropdown-btn {
+        transform: scale(0.9);
+    }
 }
-
