@@ -314,3 +314,67 @@ nav a:hover {
         height: 28px;
     }
 }
+
+
+/* Dropdown general */
+.dropdown {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* Botón principal */
+.dropdown-btn {
+    background: var(--mp-amarillo);
+    color: var(--mp-azul);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Contenedor del menú desplegable */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    background: white;
+    min-width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+/* Elementos dentro del desplegable */
+.dropdown-content a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    text-decoration: none;
+    color: var(--azul-profundo);
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.dropdown-content a:hover {
+    background: var(--gris);
+}
+
+/* Iconos */
+.dropdown-content img {
+    height: 26px;
+}
+
+/* Mostrar cuando está activo */
+.dropdown.show .dropdown-content {
+    display: block;
+}
+
