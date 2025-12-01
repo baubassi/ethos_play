@@ -282,3 +282,35 @@ nav a:hover {
 }
 
 
+
+
+/* Botón AYUDAR flotando en la esquina */
+.corner-button {
+    position: absolute;    /* NO es fijo, no molesta scroll */
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+/* Ajuste para que el botón no tape el título */
+.donate-container {
+    padding-top: 90px;
+}
+
+/* Ajustes responsive para celular */
+@media (max-width: 480px) {
+    .corner-button {
+        top: 10px;
+        right: 10px;
+        transform: scale(0.8);
+    }
+
+    .mp-button {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .mp-button img {
+        height: 28px;
+    }
+}
