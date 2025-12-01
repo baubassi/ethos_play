@@ -5,8 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegí dónde donar — Ethos</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Botón AYUDAR flotando en la esquina */
+        .corner-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- BOTÓN AYUDAR EN LA ESQUINA -->
+    <a href="TU_LINK_DE_PAGO" target="_blank" class="mp-button corner-button">
+        <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/mp_logo.png" alt="Mercado Pago">
+        AYUDAR
+    </a>
 
 <section class="donate-container">
     <h1 class="donate-title">¿A qué área te gustaría aportar?</h1>
