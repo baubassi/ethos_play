@@ -367,8 +367,11 @@ body {
 
 .donar-btn-box .dropdown {
     position: relative;
-    display: inline-block;
+    display: flex;          /* <-- LA SOLUCIÓN */
+    justify-content: center;
+    width: 100%;
 }
+
 
 .donar-btn-box .dropdown-btn {
     background: var(--azul-profundo);
