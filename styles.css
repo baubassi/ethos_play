@@ -257,3 +257,34 @@ body {
     }
 }
 
+
+/* ================================
+   LOGO ETHOS (barras + texto)
+================================ */
+.ethos-logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.ethos-logo .bars {
+    display: flex;
+    gap: 10px;
+}
+
+.ethos-logo .bars span {
+    width: 18px;      
+    height: 85px;     
+    background: white;
+    border-radius: 3px;
+}
+
+.ethos-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 58px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 3px;
+}
+
