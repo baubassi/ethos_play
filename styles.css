@@ -410,5 +410,14 @@ body {
     display: block;
 }
 
+.donar-btn-box {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;   /* CENTRA HORIZONTALMENTE */
+    align-items: center;
+    width: 100%;
+}
+
+
 
 
