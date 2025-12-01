@@ -304,5 +304,50 @@ body {
     margin-inline: auto;
 }
 
+/* Sección de instituciones */
+.instituciones-section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.titulo-area {
+    font-size: 2.4rem;
+    color: var(--azul-profundo);
+    margin-bottom: 10px;
+}
+
+.subtitulo-area {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.instituciones-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.institucion-card {
+    background: var(--gris);
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    transition: transform 0.2s ease;
+}
+
+.institucion-card:hover {
+    transform: translateY(-4px);
+}
+
+.institucion-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+
 
 
