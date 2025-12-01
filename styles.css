@@ -360,6 +360,8 @@ body {
 
 /* --- BOTÓN AYUDAR DENTRO DE CADA PROYECTO --- */
 
+/* --- BOTÓN AYUDAR DENTRO DE CADA PROYECTO --- */
+
 .donar-btn-box {
     margin-top: 20px;
     width: 100%;
@@ -367,8 +369,12 @@ body {
     justify-content: center;
 }
 
+.donar-btn-box .dropdown {
+    position: relative;
+}
+
 /* Botón */
-.dropdown-btn {
+.donar-btn-box .dropdown-btn {
     background: var(--azul-profundo);
     color: white;
     border: none;
@@ -378,28 +384,36 @@ body {
     font-size: 0.95rem;
 }
 
-/* Dropdown global flotante */
-.dropdown-content-global {
-    position: absolute;
+/* Dropdown: centrado perfecto y SIN taparse */
+.donar-btn-box .dropdown-content {
     display: none;
+    position: absolute;
+    top: 110%;
+    left: 50%;                  /* CENTRA BAJO EL BOTÓN */
+    transform: translateX(-50%);
     background: white;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-    padding: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     min-width: 200px;
-    z-index: 999999;
+    padding: 10px 0;
+    z-index: 999999;            /* NO SE TAPA */
 }
 
-/* items */
-.dropdown-content-global a {
+/* Items */
+.donar-btn-box .dropdown-content a {
     display: block;
-    padding: 12px 20px;
+    padding: 10px 15px;
     text-decoration: none;
     color: var(--azul-profundo);
 }
 
-.dropdown-content-global img {
-    width: 130px;
+/* Logos */
+.donar-btn-box .dropdown-content img {
+    width: 120px;
     display: block;
     margin: 10px auto;
+}
+
+.donar-btn-box .dropdown.show .dropdown-content {
+    display: block;
 }
