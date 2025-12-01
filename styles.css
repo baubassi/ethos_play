@@ -424,3 +424,9 @@ body {
 .institucion-card {
     overflow: visible !important;
 }
+
+
+/* Necesario para que el menú aparezca cuando JS agrega .show */
+.dropdown-content.show {
+    display: block !important;
+}
