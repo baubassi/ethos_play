@@ -6,17 +6,41 @@
     <title>Elegí dónde donar — Ethos</title>
     <link rel="stylesheet" href="styles.css">
 
-    <style>
-        /* Botón AYUDAR flotando en la esquina */
+<style>
+    /* Botón AYUDAR flotando en la esquina */
+    .corner-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 999;
+    }
+
+    /* Ajuste de la sección para que el botón no tape el título */
+    .donate-container {
+        padding-top: 90px;
+    }
+
+    /* Ajustes para celular */
+    @media (max-width: 480px) {
         .corner-button {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            z-index: 999;
+            top: 10px;
+            right: 10px;
+            transform: scale(0.8); /* achica suavemente el botón */
         }
-    </style>
+
+        .mp-button {
+            padding: 8px 12px;
+            font-size: 0.9rem;
+        }
+
+        .mp-button img {
+            height: 28px;
+        }
+    }
+</style>
 </head>
 <body>
+
 
         <a href="index.html" class="back-button">← Volver</a>
 
