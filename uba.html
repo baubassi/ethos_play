@@ -103,27 +103,31 @@
 </section>
 
 <script>
-let openMenu = null;
+let currentMenu = null;
 
-// Abrir dropdown
-document.querySelectorAll(".dropdown-btn").forEach(button => {
-    button.addEventListener("click", function (e) {
+document.querySelectorAll(".dropdown-btn").forEach(btn => {
+    btn.addEventListener("click", function (e) {
         e.stopPropagation();
 
-        // Cerrar el que estaba abierto
-        if (openMenu) openMenu.classList.remove("show");
+        const dropdown = btn.closest(".dropdown");  
+        const menu = dropdown.querySelector(".dropdown-content");
 
-        const menu = this.nextElementSibling;
-        menu.classList.add("show");
-        openMenu = menu;
+        // cerrar cualquier menú abierto
+        if (currentMenu && currentMenu !== menu) {
+            currentMenu.classList.remove("show");
+        }
+
+        // toggle del menú actual
+        menu.classList.toggle("show");
+        currentMenu = menu.classList.contains("show") ? menu : null;
     });
 });
 
-// Cerrar al hacer click afuera
+// cerrar si clic afuera
 document.addEventListener("click", () => {
-    if (openMenu) openMenu.classList.remove("show");
+    if (currentMenu) {
+        currentMenu.classList.remove("show");
+        currentMenu = null;
+    }
 });
 </script>
-
-</body>
-</html>
