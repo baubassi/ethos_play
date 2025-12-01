@@ -348,6 +348,15 @@ body {
     margin-bottom: 18px;
 }
 
+.institucion-card {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+.institucion-card h3,
+.institucion-card p {
+    text-decoration: none !important;
+}
 
 
 
