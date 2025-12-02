@@ -74,7 +74,7 @@ body {
     gap: 10px;
     padding: 8px 14px;
     background: #E63946;
-    color: var(--mp-azul);
+    color: white;
     text-decoration: none;
     border-radius: 8px;
     font-size: 1.3rem;
@@ -116,7 +116,7 @@ body {
 
 .dropdown-btn {
     background: #E63946;
-    color: var(--mp-azul);
+    color: white;
     border: none;
     padding: 12px 20px;
     border-radius: 8px;
