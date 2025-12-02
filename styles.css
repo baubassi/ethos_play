@@ -357,6 +357,8 @@ body {
 .institucion-card p {
     text-decoration: none !important;
 }
+
+
 /* -----------------------------------------
    BOTONES DENTRO DE CADA PROYECTO
 ----------------------------------------- */
@@ -370,7 +372,7 @@ body {
     gap: 10px; /* separación entre botones */
 }
 
-/* Normalización general de ambos botones */
+/* Normalización general */
 .botones-proyecto button,
 .botones-proyecto .dropdown-btn {
     padding: 12px 22px;
@@ -378,43 +380,46 @@ body {
     font-weight: 700;
     border-radius: 14px;
     display: flex;
-    align-items: center; /* centra verticalmente */
+    align-items: center;
     cursor: pointer;
     transition: 0.15s ease;
 }
 
-/* ----- BOTÓN AYUDAR (Rojo acción) ----- */
+/* -----------------------------------------
+   BOTÓN AYUDAR (ROJO ORIGINAL QUE TE GUSTABA)
+----------------------------------------- */
+
 .donar-btn-box .dropdown {
     position: relative;
 }
 
 .donar-btn-box .dropdown-btn {
-    background: #E63946; /* rojo acción */
+    background: #E63946;   /* 🔥 rojo vibrante anterior */
     color: white;
     border: none;
-    box-shadow: 0 4px 10px rgba(232, 69, 69, 0.25);
+    box-shadow: 0 4px 10px rgba(230, 57, 70, 0.25);
     letter-spacing: 0.3px;
 }
 
 .donar-btn-box .dropdown-btn:hover {
-    background: #E63946; /* rojo más oscuro */
+    background: #c72d39;   /* rojo ligeramente más oscuro */
     transform: translateY(-2px);
-    box-shadow: 0 6px 14px rgba(232, 69, 69, 0.40);
+    box-shadow: 0 6px 14px rgba(230, 57, 70, 0.40);
 }
 
-/* ----- MENÚ DESPLEGABLE AYUDAR ----- */
+/* Dropdown del AYUDAR */
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 110%;            /* debajo del botón */
+    top: 110%;
     left: 50%;
     transform: translateX(-50%);
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    border-radius: 12px;
     min-width: 220px;
     padding: 10px 0;
-    z-index: 99999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
 }
 
 .dropdown-content.show {
@@ -424,8 +429,8 @@ body {
 .dropdown-content a {
     display: block;
     padding: 10px 15px;
-    text-decoration: none;
     color: var(--azul-profundo);
+    text-decoration: none;
 }
 
 .dropdown-content img {
@@ -434,12 +439,19 @@ body {
     display: block;
 }
 
-/* ----- BOTÓN INFORMACIÓN (Azul Ethos) ----- */
+/* -----------------------------------------
+   BOTÓN INFORMACIÓN (box original: celeste, simple)
+----------------------------------------- */
+
 .info-btn {
     background: var(--celeste);
     color: white;
+    padding: 10px 18px;     /* más simple */
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;       /* menos cargado */
     border: none;
-    box-shadow: 0 3px 10px rgba(46, 139, 192, 0.25);
+    box-shadow: 0 2px 6px rgba(46,139,192,0.25);  /* más suave */
 }
 
 .info-btn:hover {
@@ -447,8 +459,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Permitir que el dropdown salga fuera del card */
+/* Para permitir que el dropdown salga fuera del card */
 .institucion-card {
     overflow: visible !important;
 }
-
