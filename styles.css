@@ -468,7 +468,7 @@ body {
 
 
 /* ----------------------------------------
-   NAV SUPERIOR ESTILO APPLE
+   NAV SUPERIOR ESTILO APPLE (RESPONSIVE)
 ---------------------------------------- */
 
 .ethos-nav {
@@ -476,16 +476,24 @@ body {
     top: 20px;
     left: 0;
     width: 100%;
+
     display: flex;
     justify-content: center;
-    gap: 160px;
+
+    /* gap flexible → adapta a todas las pantallas */
+    gap: clamp(20px, 6vw, 80px);
+
+    padding: 0 20px;  /* evita que toque bordes en móvil */
     z-index: 2000;
 }
 
 .ethos-nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.05rem;
+
+    /* tamaño de fuente responsive */
+    font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+
     font-weight: 500;
     opacity: 0.9;
     transition: opacity 0.2s ease;
@@ -495,7 +503,16 @@ body {
     opacity: 1;
 }
 
+/* Móvil: si no entra, se acomoda en varias líneas */
+@media (max-width: 480px) {
+    .ethos-nav {
+        flex-wrap: wrap;
+        gap: 20px;
+        top: 10px;
+    }
+}
 
+/* Scroll suave */
 html {
     scroll-behavior: smooth;
 }
