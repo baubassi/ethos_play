@@ -494,3 +494,8 @@ body {
 .ethos-nav a:hover {
     opacity: 1;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
