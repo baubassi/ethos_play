@@ -371,6 +371,17 @@ body {
     gap: 10px; /* separación entre botones */
 }
 
+.botones-proyecto button,
+.botones-proyecto .dropdown-btn {
+    padding: 12px 22px;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+}
+
+
 /* ----- BOTÓN AYUDAR (Rojo acción) ----- */
 .donar-btn-box .dropdown {
     position: relative;
