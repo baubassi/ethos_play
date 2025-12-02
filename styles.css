@@ -389,7 +389,7 @@ body {
 }
 
 .donar-btn-box .dropdown-btn {
-    background: #D7263D; /* rojo acción */
+    background: #E63946; /* rojo acción */
     color: white;
     border: none;
     box-shadow: 0 4px 10px rgba(232, 69, 69, 0.25);
@@ -397,7 +397,7 @@ body {
 }
 
 .donar-btn-box .dropdown-btn:hover {
-    background: #C73737; /* rojo más oscuro */
+    background: #E63946; /* rojo más oscuro */
     transform: translateY(-2px);
     box-shadow: 0 6px 14px rgba(232, 69, 69, 0.40);
 }
