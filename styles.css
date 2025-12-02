@@ -499,3 +499,31 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* Sección About Us */
+.about-section {
+    padding: 120px 20px;
+    text-align: center;
+    background: var(--gris);
+}
+
+.about-section h2 {
+    font-size: 2.4rem;
+    color: var(--azul-profundo);
+    margin-bottom: 40px;
+}
+
+/* Contenedor horizontal de los nombres */
+.about-names {
+    display: flex;
+    justify-content: center;
+    gap: 100px;              /* 🟦 espacio horizontal entre los nombres */
+    margin-top: 20px;
+}
+
+/* Estilo de cada nombre */
+.about-names .persona {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--azul-profundo);
+}
