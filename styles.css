@@ -478,7 +478,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 160px;
     z-index: 2000;
 }
 
