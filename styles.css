@@ -451,3 +451,16 @@ body {
 .institucion-card {
     overflow: visible !important;
 }
+
+
+
+/* Alinear perfectamente AYUDAR + INFORMACIÓN */
+.botones-proyecto button,
+.botones-proyecto .dropdown-btn {
+    padding: 12px 22px;      /* misma altura */
+    border-radius: 14px;     /* mismo borde */
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;     /* centra el texto verticalmente */
+}
