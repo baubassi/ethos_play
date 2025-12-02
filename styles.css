@@ -372,22 +372,23 @@ body {
 }
 
 .donar-btn-box .dropdown-btn {
-    background: var(--azul-profundo);
+    background: #E84545;        /* rojo acción */
     color: white;
-    border: 2px solid var(--celeste);
-    padding: 10px 20px;
-    border-radius: 12px;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 14px;
     cursor: pointer;
-    font-size: 0.95rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 10px rgba(232, 69, 69, 0.25);
     transition: 0.15s ease;
 }
 
 .donar-btn-box .dropdown-btn:hover {
-    background: var(--celeste);
-    border-color: var(--azul-profundo);
-    color: white;
+    background: #C73737;        /* rojo más oscuro */
     transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(232, 69, 69, 0.4);
 }
 
 
