@@ -358,17 +358,22 @@ body {
     text-decoration: none !important;
 }
 
-/* --- BOTÓN AYUDAR DENTRO DE CADA PROYECTO --- */
+/* -----------------------------------------
+   BOTONES DENTRO DE CADA PROYECTO
+----------------------------------------- */
 
-.donar-btn-box {
-    margin-top: 20px;
-    width: 100%;
+/* Contenedor horizontal de AYUDAR + INFORMACIÓN */
+.botones-proyecto {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+    gap: 10px; /* separación entre botones */
 }
 
+/* ----- BOTÓN AYUDAR (Rojo acción) ----- */
 .donar-btn-box .dropdown {
-    position: relative; 
+    position: relative;
 }
 
 .donar-btn-box .dropdown-btn {
@@ -391,72 +396,58 @@ body {
     box-shadow: 0 6px 14px rgba(232, 69, 69, 0.4);
 }
 
-
-/* MENÚ oculto por defecto */
-.donar-btn-box .dropdown-content {
+/* ----- MENÚ DESPLEGABLE ----- */
+.dropdown-content {
     display: none;
     position: absolute;
-    top: 110%;
+    top: 110%;                   /* justo debajo del botón */
     left: 50%;
     transform: translateX(-50%);
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     min-width: 220px;
-    z-index: 99999;
     padding: 10px 0;
+    z-index: 99999;
 }
 
-/* MENÚ visible cuando JS agrega .show */
 .dropdown-content.show {
     display: block !important;
 }
 
-/* Items */
-.donar-btn-box .dropdown-content a {
+.dropdown-content a {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
     color: var(--azul-profundo);
 }
 
-.donar-btn-box .dropdown-content img {
+.dropdown-content img {
     width: 120px;
-    display: block;
     margin: 10px auto;
+    display: block;
 }
 
-/* Botón INFO DEL PROYECTO (Azul Ethos) */
+/* ----- BOTÓN INFORMACIÓN (Azul Ethos) ----- */
 .info-btn {
-    background: var(--celeste);       /* azul Ethos */
+    background: var(--celeste);
     color: white;
     border: none;
-    padding: 10px 18px;
+    padding: 12px 22px;
     border-radius: 12px;
     cursor: pointer;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
-    margin-left: 10px;                /* separación respecto de AYUDAR */
-    transition: 0.15s ease;
     box-shadow: 0 3px 10px rgba(46, 139, 192, 0.25);
+    transition: 0.15s ease;
 }
 
 .info-btn:hover {
-    background: #1F6F9D;              /* azul un poco más oscuro */
+    background: #1F6F9D;
     transform: translateY(-2px);
 }
 
-/* Contenedor general de botones */
-.botones-proyecto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 22px;
-    gap: 10px;
-}
-
-
-/* Permitir que el menú salga del card */
+/* Permitir que el dropdown salga fuera del card */
 .institucion-card {
     overflow: visible !important;
 }
