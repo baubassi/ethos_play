@@ -426,6 +426,36 @@ body {
     margin: 10px auto;
 }
 
+/* Botón INFO DEL PROYECTO (Azul Ethos) */
+.info-btn {
+    background: var(--celeste);       /* azul Ethos */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-left: 10px;                /* separación respecto de AYUDAR */
+    transition: 0.15s ease;
+    box-shadow: 0 3px 10px rgba(46, 139, 192, 0.25);
+}
+
+.info-btn:hover {
+    background: #1F6F9D;              /* azul un poco más oscuro */
+    transform: translateY(-2px);
+}
+
+/* Contenedor general de botones */
+.botones-proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+    gap: 10px;
+}
+
+
 /* Permitir que el menú salga del card */
 .institucion-card {
     overflow: visible !important;
