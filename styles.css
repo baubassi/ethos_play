@@ -374,12 +374,22 @@ body {
 .donar-btn-box .dropdown-btn {
     background: var(--azul-profundo);
     color: white;
-    border: none;
-    padding: 10px 18px;
+    border: 2px solid var(--celeste);
+    padding: 10px 20px;
     border-radius: 12px;
     cursor: pointer;
     font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.15s ease;
 }
+
+.donar-btn-box .dropdown-btn:hover {
+    background: var(--celeste);
+    border-color: var(--azul-profundo);
+    color: white;
+    transform: translateY(-2px);
+}
+
 
 /* MENÚ oculto por defecto */
 .donar-btn-box .dropdown-content {
