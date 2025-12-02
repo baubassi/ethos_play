@@ -68,20 +68,6 @@ body {
 /* ================================
    BOTÓN MERCADO PAGO (estático o corner)
 ================================ */
-.mp-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    padding: 8px 14px;
-    background: var(--mp-amarillo);
-    color: var(--mp-azul);
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 1.3rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    transition: transform 0.15s ease;
-}
 
 .mp-button img {
     height: 50px;
