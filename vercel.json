@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/uba",
+      "destination": "https://githubbautigv.vercel.app"
+    }
+  ]
+}
