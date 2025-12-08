@@ -268,17 +268,18 @@ body {
         transform: scale(0.9);
     }
 
-    /* LOGO ETHOS (reescalado completo) */
     .ethos-header {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%) scale(0.65);
+    transform: scale(0.65);
     transform-origin: center center;
+    margin: 0 auto;
+
+    display: block;              /* ⭐ hace que margin auto funcione */
+    width: fit-content;          /* ⭐ evita que ocupe todo el ancho */
 
     gap: 22px;
-    align-items: center;
-    width: fit-content;
+    align-items: flex-start;
 }
+
 
     .ethos-icon {
         width: 105px;
