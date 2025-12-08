@@ -138,5 +138,32 @@ document.querySelectorAll(".lang-btn").forEach(btn => {
 });
 </script>
 
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Idioma guardado o inglés por defecto
+    const savedLang = localStorage.getItem("ethos-lang") || "en";
+
+    // Aplicar idioma apenas carga la página (usa la función de EDUCATION)
+    setLangEdu(savedLang);
+
+    // Botones de banderas
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            const lang = btn.dataset.lang;
+
+            // Guardar elección
+            localStorage.setItem("ethos-lang", lang);
+
+            // Cambiar idioma en EDUCATION
+            setLangEdu(lang);
+        });
+    });
+});
+</script>
+
+
+    
 </body>
 </html>
