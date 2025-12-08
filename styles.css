@@ -258,12 +258,12 @@ body {
 /* ================================
    RESPONSIVE
 ================================ */
+/* ================================
+   RESPONSIVE (MÓVIL)
+================================ */
 @media (max-width: 480px) {
-   .ethos-header {
-        transform: scale(0.55);
-        transform-origin: left top;
-        margin-left: -10px;   /* opcional: lo acerca al borde como en desktop */
-    }
+
+    /* BOTÓN */
     .dropdown {
         top: 10px;
         right: 10px;
@@ -272,19 +272,18 @@ body {
     .dropdown-btn {
         transform: scale(0.9);
     }
-}  /* <-- cierre correcto */
 
-
-/* ============ HERO RESPONSIVE ============ */
-@media (max-width: 480px) {
-
+    /* LOGO ETHOS (reescalado completo) */
     .ethos-header {
-        gap: 22px;
+        transform: scale(0.65);
+        transform-origin: center center;  /* centrado perfecto */
+        margin: 0 auto;
+        gap: 22px;                       /* mantiene estética */
         align-items: flex-start;
     }
 
     .ethos-icon {
-        width: 105px;             
+        width: 105px;
         height: 95px;
         border-width: 5px;
     }
@@ -305,6 +304,7 @@ body {
         margin-top: 8px;
     }
 }
+
 
 /* ================================
    LOGO ETHOS (barras + texto)
