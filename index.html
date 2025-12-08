@@ -67,19 +67,22 @@
     <p>© 2025 Ethos — Construyendo confianza.</p>
 
     <div class="footer-links">
-
-        <div class="contact-dropdown">
-            <button class="contact-btn">Contacto</button>
-
-            <div class="contact-menu">
-                <a href="mailto:bautistabassi@doethos.com">bautistabassi@doethos.com</a>
-                <a href="mailto:bautistagarcia@doethos.com">bautistagarcia@doethos.com</a>
-            </div>
-        </div>
-
         <a href="faq.html">FAQ</a>
+        <button id="contacto-btn" class="footer-contact-btn">Contacto</button>
     </div>
 </footer>
+
+<!-- POPUP DE CONTACTO -->
+<div id="contact-popup" class="contact-popup hidden">
+    <div class="popup-box">
+        <h3>Contactanos</h3>
+        <a href="mailto:bautistabassi@doethos.com">bautistabassi@doethos.com</a>
+        <a href="mailto:bautistagarcia@doethos.com">bautistagarcia@doethos.com</a>
+
+        <button class="close-popup">Cerrar</button>
+    </div>
+</div>
+
 
 <script>
   const mensajes = [
