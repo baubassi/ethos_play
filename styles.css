@@ -2,12 +2,13 @@
    PALETA ETHOS
 ================================ */
 :root {
-    --azul-profundo: #083468;
+    --azul-profundo: #073B73;  /* ✔ Azul Ethos exacto */
     --celeste: #2E8BC0;
     --blanco: #FFFFFF;
     --gris: #F4F6F7;
     --negro: #111111;
 }
+
 
 /* ================================
    RESET
