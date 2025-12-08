@@ -688,19 +688,20 @@ html {
 
 
 
-.contacto-inline {
+.footer-mails {
     display: flex;
-    gap: 10px;        /* espacio entre mails */
-    align-items: center;
-    flex-wrap: wrap;  /* por si la pantalla es muy chica */
+    justify-content: center;            /* centrar horizontal */
+    gap: clamp(10px, 3vw, 40px);        /* espacio flexible estilo Apple-nav */
+    margin-top: 10px;                   /* separación del FAQ */
 }
 
-.contacto-inline a {
+.footer-mails a {
     color: #000;
     text-decoration: none;
+    font-size: clamp(0.85rem, 1vw, 1rem);
     font-weight: 500;
 }
 
-.contacto-inline a:hover {
+.footer-mails a:hover {
     text-decoration: underline;
 }
