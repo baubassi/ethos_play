@@ -285,6 +285,14 @@ body {
     background: white;
 }
 
+/* COLUMNA DE TEXTO (ETHOS + SLOGAN) */
+.ethos-text-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;     /* ESTA ES LA CLAVE: alinea a la IZQUIERDA */
+    gap: 12px;
+}
+
 /* Bloque Ethos + Slogan */
 .ethos-text-group {
     display: flex;
