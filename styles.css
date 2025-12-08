@@ -688,20 +688,53 @@ html {
 
 
 
-.footer-mails {
+/* FOOTER EN UNA SOLA LÍNEA (3 columnas) */
+.footer-bar {
+    width: 100%;
+    padding: 12px 20px;
     display: flex;
-    justify-content: center;            /* centrar horizontal */
-    gap: clamp(10px, 3vw, 40px);        /* espacio flexible estilo Apple-nav */
-    margin-top: 10px;                   /* separación del FAQ */
+    justify-content: space-between;   /* izquierda - centro - derecha */
+    align-items: center;
+    font-size: 0.9rem;
+    background: var(--gris);
+    flex-wrap: wrap;                  /* por si el móvil no entra */
 }
 
-.footer-mails a {
-    color: #000;
+/* Izquierda */
+.footer-left {
+    flex: 1;
+    text-align: left;
+}
+
+/* Centro: mails */
+.footer-center {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 18px;                        /* espacio entre mails */
+}
+
+/* Derecha */
+.footer-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilo de links */
+.footer-bar a {
+    color: var(--azul-profundo);
     text-decoration: none;
-    font-size: clamp(0.85rem, 1vw, 1rem);
-    font-weight: 500;
 }
 
-.footer-mails a:hover {
+.footer-bar a:hover {
     text-decoration: underline;
+}
+
+/* MÓVIL – se mantiene en una sola línea mientras entre */
+@media (max-width: 480px) {
+    .footer-bar {
+        font-size: 0.78rem;
+        gap: 6px;
+    }
 }
