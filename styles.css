@@ -280,7 +280,7 @@ body {
 }
 
 .ethos-icon .bars span {
-    width: 10px;
+    width: 8px;
     height: 100px;
     background: white;
 }
@@ -304,7 +304,7 @@ body {
 /* ETHOS */
 .ethos-text {
     font-family: 'Playfair Display', serif;
-    font-size: 150px;
+    font-size: 160px;
     font-weight: 700;
     color: white;
     line-height: 0.8;   /* <-- ACÁ */
