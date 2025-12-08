@@ -269,8 +269,7 @@ body {
     }
 
     .ethos-header {
-    transform: scale(0.45);
-    transform-origin: left center;
+    transform: scale(0.55);
     margin: 0 auto;
 
     display: block;              /* ⭐ hace que margin auto funcione */
