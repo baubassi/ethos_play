@@ -252,12 +252,7 @@ body {
     box-shadow: 0 6px 15px rgba(0,0,0,0.12);
 }
 
-/* ================================
-   RESPONSIVE (MÓVIL)
-================================ */
-/* ================================
-   RESPONSIVE
-================================ */
+
 /* ================================
    RESPONSIVE (MÓVIL)
 ================================ */
@@ -275,12 +270,15 @@ body {
 
     /* LOGO ETHOS (reescalado completo) */
     .ethos-header {
-        transform: scale(0.65);
-        transform-origin: center center;  /* centrado perfecto */
-        margin: 0 auto;
-        gap: 22px;                       /* mantiene estética */
-        align-items: flex-start;
-    }
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%) scale(0.65);
+    transform-origin: center center;
+
+    gap: 22px;
+    align-items: center;
+    width: fit-content;
+}
 
     .ethos-icon {
         width: 105px;
