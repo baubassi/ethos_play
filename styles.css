@@ -686,3 +686,50 @@ html {
     box-shadow: none !important;
 }
 
+
+
+/* Footer contact dropdown */
+.contact-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.contact-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+}
+
+.contact-menu {
+    display: none;
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    padding: 10px 0;
+    min-width: 220px;
+    z-index: 999;
+}
+
+.contact-menu a {
+    display: block;
+    padding: 8px 14px;
+    text-decoration: none;
+    color: #062B58;
+    font-weight: 500;
+}
+
+.contact-menu a:hover {
+    background: #f3f3f3;
+}
+
+/* mostrar */
+.contact-dropdown.show .contact-menu {
+    display: block;
+}
