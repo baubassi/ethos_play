@@ -5,64 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elegí dónde donar — Ethos</title>
     <link rel="stylesheet" href="styles.css">
-
-</style>
 </head>
 <body>
 
+<!-- 🌐 Selector de idioma -->
+<div class="lang-switch">
+    <button data-lang="es" class="lang-btn">🇪🇸</button>
+    <button data-lang="en" class="lang-btn">🇺🇸</button>
+</div>
 
-        <a href="index.html" class="back-button">← Volver</a>
-
-
+<a href="index.html" class="back-button">← Volver</a>
 
 <section class="donate-container">
-    <h1 class="donate-title">¿A qué área te gustaría aportar?</h1>
+    <h1 class="donate-title" id="title-area">¿A qué área te gustaría aportar?</h1>
 
     <div class="donate-grid">
 
         <!-- EDUCACIÓN -->
         <a href="education.html" class="donate-card">
             <img src="https://img.icons8.com/ios-filled/100/1A2A6C/pencil-tip.png" class="icon-donar" alt="Educación">
-            <h2>Educación</h2>
-            <p>Becas, materiales escolares y apoyo a estudiantes.</p>
+            <h2 class="card-title" data-key="edu_t">Educación</h2>
+            <p class="card-text" data-key="edu_d">Becas, materiales escolares y apoyo a estudiantes.</p>
         </a>
 
         <!-- SALUD -->
         <a href="#" class="donate-card">
             <img src="https://img.icons8.com/ios-filled/100/1A2A6C/stethoscope.png" class="icon-donar" alt="Salud">
-            <h2>Salud</h2>
-            <p>Medicinas, equipamiento y acceso a atención médica.</p>
+            <h2 class="card-title" data-key="salud_t">Salud</h2>
+            <p class="card-text" data-key="salud_d">Medicinas, equipamiento y acceso a atención médica.</p>
         </a>
 
         <!-- CULTURA -->
         <a href="#" class="donate-card">
             <img src="https://img.icons8.com/ios-filled/100/1A2A6C/theatre-mask.png" class="icon-donar" alt="Cultura">
-            <h2>Cultura</h2>
-            <p>Proyectos artísticos, bibliotecas y espacios comunitarios.</p>
+            <h2 class="card-title" data-key="cultura_t">Cultura</h2>
+            <p class="card-text" data-key="cultura_d">Proyectos artísticos, bibliotecas y espacios comunitarios.</p>
         </a>
 
         <!-- EMERGENCIAS -->
         <a href="#" class="donate-card">
             <img src="https://img.icons8.com/ios-filled/100/1A2A6C/high-priority.png" class="icon-donar" alt="Emergencias">
-            <h2>Emergencias</h2>
-            <p>Apoyo inmediato ante desastres y situaciones críticas.</p>
+            <h2 class="card-title" data-key="emerg_t">Emergencias</h2>
+            <p class="card-text" data-key="emerg_d">Apoyo inmediato ante desastres y situaciones críticas.</p>
         </a>
 
     </div>
 </section>
 
 <footer>
-    <p>© 2025 Ethos — Construyendo confianza.</p>
+    <p id="footer-text">© 2025 Ethos — Construyendo confianza.</p>
     <div class="footer-links">
-        <a href="faq.html">FAQ</a>
-        <a href="mailto:bautistabassi@g.harvard.edu">Contacto</a>
+        <a href="faq.html" id="faq-link">FAQ</a>
+        <a href="mailto:bautistabassi@g.harvard.edu" id="contact-link">Contacto</a>
     </div>
 </footer>
 
-    <script>
-    document.querySelector(".dropdown-btn").addEventListener("click", function() {
-        document.querySelector(".dropdown").classList.toggle("show");
+<script>
+const translations = {
+    es: {
+        title: "¿A qué área te gustaría aportar?",
+        edu_t: "Educación",
+        edu_d: "Becas, materiales escolares y apoyo a estudiantes.",
+        salud_t: "Salud",
+        salud_d: "Medicinas, equipamiento y acceso a atención médica.",
+        cultura_t: "Cultura",
+        cultura_d: "Proyectos artísticos, bibliotecas y espacios comunitarios.",
+        emerg_t: "Emergencias",
+        emerg_d: "Apoyo inmediato ante desastres y situaciones críticas.",
+        footer: "© 2025 Ethos — Construyendo confianza.",
+        faq: "FAQ",
+        contacto: "Contacto"
+    },
+    en: {
+        title: "Where would you like to contribute?",
+        edu_t: "Education",
+        edu_d: "Scholarships, school supplies and student support.",
+        salud_t: "Health",
+        salud_d: "Medicines, equipment and access to medical care.",
+        cultura_t: "Culture",
+        cultura_d: "Art projects, libraries and community spaces.",
+        emerg_t: "Emergency Relief",
+        emerg_d: "Immediate support during disasters and critical situations.",
+        footer: "© 2025 Ethos — Building trust.",
+        faq: "FAQ",
+        contacto: "Contact"
+    }
+};
+
+function setLang(lang) {
+    document.querySelector("#title-area").innerText = translations[lang].title;
+
+    document.querySelectorAll(".card-title").forEach(el => {
+        el.innerText = translations[lang][el.dataset.key];
     });
-    </script>
+
+    document.querySelectorAll(".card-text").forEach(el => {
+        el.innerText = translations[lang][el.dataset.key];
+    });
+
+    document.querySelector("#footer-text").innerText = translations[lang].footer;
+    document.querySelector("#faq-link").innerText = translations[lang].faq;
+    document.querySelector("#contact-link").innerText = translations[lang].contacto;
+}
+
+document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => setLang(btn.dataset.lang));
+});
+</script>
+
 </body>
 </html>
