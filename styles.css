@@ -302,7 +302,7 @@ body {
 /* SLOGAN */
 .ethos-slogan {
     font-family: 'Inter', sans-serif;
-    font-size: 32px;                /* ajustalo si querés más chico */
+    font-size: 20px;                /* ajustalo si querés más chico */
     font-weight: 500;
     letter-spacing: 4px;            /* similar al logo original */
     color: white;
