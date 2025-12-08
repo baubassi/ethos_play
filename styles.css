@@ -2,7 +2,7 @@
    PALETA ETHOS
 ================================ */
 :root {
-    --azul-profundo: #083468;
+    --azul-profundo: #1A2A6C;
     --celeste: #2E8BC0;
     --blanco: #FFFFFF;
     --gris: #F4F6F7;
@@ -261,29 +261,38 @@ body {
 .ethos-logo {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 28px;               /* más parecido al logo original */
     margin-bottom: 25px;
 }
 
-.ethos-logo .bars {
+.ethos-logo .icon {
+    width: 120px;
+    height: 120px;
+    border: 8px solid white; /* borde grueso como el logo */
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.ethos-logo .bars span {
-    width: 18px;      
-    height: 85px;     
+.ethos-logo .icon .bars {
+    display: flex;
+    gap: 22px;               /* separación real aproximada */
+}
+
+.ethos-logo .icon .bars span {
+    width: 12px;
+    height: 85px;
     background: white;
-    border-radius: 3px;
 }
 
 .ethos-text {
-    font-family: 'Inter', sans-serif;
-    font-size: 58px;
+    font-family: 'Playfair Display', serif; /* estilo del logo */
+    font-size: 82px;                        /* tamaño real aproximado */
     font-weight: 700;
     color: white;
-    letter-spacing: 3px;
+    letter-spacing: 1px;                    /* casi nada, como el logo */
 }
+
 
 
 /* Limitar tamaño de logos dentro del dropdown */
