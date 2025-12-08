@@ -8,57 +8,126 @@
 </head>
 <body>
 
+<!-- 🌐 Selector de idioma -->
+<div class="lang-switch">
+    <button data-lang="es" class="lang-btn">🇪🇸</button>
+    <button data-lang="en" class="lang-btn">🇺🇸</button>
+</div>
+
 <a href="index.html" class="back-button">← Volver</a>
 
 <section class="instituciones-section">
 
-    <h1 class="titulo-area">Educación</h1>
-    <p class="subtitulo-area">Organizaciones dedicadas a promover acceso, aprendizaje y oportunidades.</p>
+    <h1 class="titulo-area" id="title-edu">Educación</h1>
+    <p class="subtitulo-area" id="subtitle-edu">
+        Organizaciones dedicadas a promover acceso, aprendizaje y oportunidades.
+    </p>
 
     <div class="instituciones-grid">
 
-<!-- Universidad de Buenos Aires -->
-<a href="https://uba.doethos.com" 
-   class="institucion-card">
+        <!-- Universidad de Buenos Aires -->
+        <a href="https://uba.doethos.com" class="institucion-card">
+            <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uba.png"
+                 alt="Logo institución" class="institucion-logo">
 
-    <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/uba.png"
-         alt="Logo institución" 
-         class="institucion-logo">
-
-    <h3>Universidad de Buenos Aires</h3>
-    <p>Descripción breve de la institución orientada a educación.</p>
-</a>
-
-
-
+            <h3 class="inst-title" data-key="uba_t">Universidad de Buenos Aires</h3>
+            <p class="inst-desc" data-key="uba_d">
+                Descripción breve de la institución orientada a educación.
+            </p>
+        </a>
 
         <!-- Institución 2 -->
         <div class="institucion-card">
             <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png"
                  alt="Logo institución" class="institucion-logo">
-            <h3>Institución 2</h3>
-            <p>Descripción breve de la institución orientada a educación.</p>
+
+            <h3 class="inst-title" data-key="i2_t">Institución 2</h3>
+            <p class="inst-desc" data-key="i2_d">
+                Descripción breve de la institución orientada a educación.
+            </p>
         </div>
 
         <!-- Institución 3 -->
         <div class="institucion-card">
             <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png"
                  alt="Logo institución" class="institucion-logo">
-            <h3>Institución 3</h3>
-            <p>Descripción breve de la institución orientada a educación.</p>
+
+            <h3 class="inst-title" data-key="i3_t">Institución 3</h3>
+            <p class="inst-desc" data-key="i3_d">
+                Descripción breve de la institución orientada a educación.
+            </p>
         </div>
 
         <!-- Institución 4 -->
         <div class="institucion-card">
             <img src="https://raw.githubusercontent.com/baubassi/ethos_play/main/icono.png"
                  alt="Logo institución" class="institucion-logo">
-            <h3>Institución 4</h3>
-            <p>Descripción breve de la institución orientada a educación.</p>
+
+            <h3 class="inst-title" data-key="i4_t">Institución 4</h3>
+            <p class="inst-desc" data-key="i4_d">
+                Descripción breve de la institución orientada a educación.
+            </p>
         </div>
 
     </div>
 
 </section>
+
+
+<script>
+const translationsEdu = {
+    es: {
+        title: "Educación",
+        subtitle: "Organizaciones dedicadas a promover acceso, aprendizaje y oportunidades.",
+
+        uba_t: "Universidad de Buenos Aires",
+        uba_d: "Descripción breve de la institución orientada a educación.",
+
+        i2_t: "Institución 2",
+        i2_d: "Descripción breve de la institución orientada a educación.",
+
+        i3_t: "Institución 3",
+        i3_d: "Descripción breve de la institución orientada a educación.",
+
+        i4_t: "Institución 4",
+        i4_d: "Descripción breve de la institución orientada a educación."
+    },
+
+    en: {
+        title: "Education",
+        subtitle: "Organizations dedicated to promoting access, learning, and opportunities.",
+
+        uba_t: "University of Buenos Aires",
+        uba_d: "Brief description of the institution focused on education.",
+
+        i2_t: "Institution 2",
+        i2_d: "Brief description of the institution focused on education.",
+
+        i3_t: "Institution 3",
+        i3_d: "Brief description of the institution focused on education.",
+
+        i4_t: "Institution 4",
+        i4_d: "Brief description of the institution focused on education."
+    }
+};
+
+function setLangEdu(lang) {
+    document.querySelector("#title-edu").innerText = translationsEdu[lang].title;
+    document.querySelector("#subtitle-edu").innerText = translationsEdu[lang].subtitle;
+
+    document.querySelectorAll(".inst-title").forEach(el => {
+        el.innerText = translationsEdu[lang][el.dataset.key];
+    });
+
+    document.querySelectorAll(".inst-desc").forEach(el => {
+        el.innerText = translationsEdu[lang][el.dataset.key];
+    });
+}
+
+document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => setLangEdu(btn.dataset.lang));
+});
+</script>
 
 </body>
 </html>
