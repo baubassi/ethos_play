@@ -267,7 +267,7 @@ body {
 /* Icono */
 .ethos-icon {
     width: 160px;
-    height: 140px;
+    height: 145px;
     border: 9px solid #ffffff;
     display: flex;
     justify-content: center;
@@ -307,7 +307,7 @@ body {
     font-weight: 900;
     font-size: 190px;
     color: white;
-    line-height: 0.9;     /* más seguro */
+    line-height: 0.8;     /* más seguro */
     transform: none !important;
 }
 
