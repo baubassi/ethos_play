@@ -303,9 +303,9 @@ body {
 
 /* ETHOS */
 .ethos-text {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     font-size: 160px;
-    font-weight: 700;
+    font-weight: 800;
     color: white;
     line-height: 0.8;   /* <-- ACÁ */
 }
