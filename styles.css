@@ -266,9 +266,9 @@ body {
 
 /* Icono */
 .ethos-icon {
-    width: 180px;
-    height: 180px;
-    border: 12px solid #ffffff;
+    width: 160px;
+    height: 140px;
+    border: 9px solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -281,7 +281,7 @@ body {
 
 .ethos-icon .bars span {
     width: 16px;
-    height: 125px;
+    height: 110px;
     background: white;
 }
 
