@@ -649,7 +649,7 @@ html {
 /* ===== Selector de idioma (arriba a la derecha) ===== */
 
 .lang-switch {
-    position: fixed;
+    position: absolute;
     top: 15px;
     right: 15px;
     display: flex;
