@@ -30,7 +30,7 @@ body {
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    gap: 25px;   /* o 30–40px si querés más aire */
+    gap: 40px;   /* o 30–40px si querés más aire */
     align-items: center; 
     text-align: center; 
     padding: 0 20px; 
