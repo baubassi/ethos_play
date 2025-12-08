@@ -255,47 +255,52 @@ body {
 /* ================================
    RESPONSIVE (MÓVIL)
 ================================ */
-/* ================================
-   RESPONSIVE — FIX LOGO ETHOS
-================================ */
+/* ============================================
+   RESPONSIVE LOGO ETHOS — versión anterior FIX
+=============================================== */
 @media (max-width: 480px) {
 
-    /* El bloque pasa de horizontal → vertical */
     .ethos-header {
-        flex-direction: column;     /* 🔥 CLAVE */
-        align-items: center;        /* centra todo */
-        gap: 14px;                  /* menor distancia */
-        text-align: center;         /* centra slogan */
+        gap: 18px;                 /* más compacto */
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;         /* evita que se rompa */
+        width: 100%;
     }
 
-    /* Icono reducido */
     .ethos-icon {
-        width: 95px;
-        height: 85px;
+        width: 85px;
+        height: 78px;
         border-width: 5px;
     }
 
+    .ethos-icon .bars {
+        gap: 16px;
+    }
+
     .ethos-icon .bars span {
-        height: 55px;
         width: 5px;
-        gap: 14px;
+        height: 52px;
     }
 
-    /* Texto “Ethos” más pequeño */
     .ethos-text {
-        font-size: 72px;            /* 🔥 antes 190px → ahora entra perfecto */
-        line-height: 0.85;
-        text-align: center;
+        font-size: 60px;       /* 🔥 antes era gigante → ahora entra perfecto */
+        line-height: 0.82;
+        white-space: nowrap;   /* 🔥 evita que “Ethos” se corte */
     }
 
-    /* Slogan más chico */
     .ethos-slogan {
-        font-size: 9.5px;
-        letter-spacing: 2px;
+        font-size: 9px;
+        letter-spacing: 1.9px;
         margin-top: 6px;
-        text-align: center;
+        white-space: nowrap;   /* 🔥 no se corta */
+    }
+
+    .ethos-text-block {
+        align-items: flex-start;  
     }
 }
+
 
 
 
