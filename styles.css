@@ -255,50 +255,51 @@ body {
 /* ================================
    RESPONSIVE (MÓVIL)
 ================================ */
-/* ============================================
-   RESPONSIVE LOGO ETHOS — versión anterior FIX
-=============================================== */
 /* ================================
-   LOGO ETHOS — MOBILE
+   RESPONSIVE
 ================================ */
+@media (max-width: 480px) {
+    .dropdown {
+        top: 10px;
+        right: 10px;
+    }
+
+    .dropdown-btn {
+        transform: scale(0.9);
+    }
+}  /* <-- cierre correcto */
+
+
+/* ============ HERO RESPONSIVE ============ */
 @media (max-width: 480px) {
 
     .ethos-header {
-        gap: 18px;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
+        gap: 22px;
+        align-items: flex-start;
     }
 
     .ethos-icon {
-        width: 95px;
-        height: 85px;
-        border-width: 6px;
-    }
-
-    .ethos-icon .bars {
-        gap: 18px;
+        width: 105px;             
+        height: 95px;
+        border-width: 5px;
     }
 
     .ethos-icon .bars span {
-        width: 6px;
         height: 60px;
+        width: 5px;
     }
 
     .ethos-text {
-        font-size: 82px;
+        font-size: 88px;
         line-height: 0.82;
-        white-space: nowrap;
     }
 
     .ethos-slogan {
-        font-size: 9px;
-        letter-spacing: 2px;
-        white-space: nowrap;
-        margin-top: 6px;
+        font-size: 10px;
+        letter-spacing: 2.2px;
+        margin-top: 8px;
     }
 }
-
 
 /* ================================
    LOGO ETHOS (barras + texto)
