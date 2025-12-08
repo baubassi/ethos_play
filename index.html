@@ -150,6 +150,15 @@ document.querySelectorAll(".lang-btn").forEach(btn => {
 </script>
 
 
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+      const lang = btn.dataset.lang;
+      localStorage.setItem("ethos-lang", lang);  // ⭐ GUARDA idioma
+      location.reload();                         // ⭐ Recarga la página
+  });
+});
+
+
 
 
 
