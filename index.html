@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="es" data-lang="auto">
 <head>
     <meta charset="UTF-8">
@@ -18,9 +19,9 @@
 </head>
 <body>
 
-<!-- ========================================
-     HERO
-========================================= -->
+
+
+    <!-- Sección principal -->
 <section class="hero">
 
     <div class="ethos-header">
@@ -35,24 +36,28 @@
 
         <div class="ethos-text-block">
             <div class="ethos-text">Ethos</div>
-            <div class="ethos-slogan"></div> <!-- Aquí se pone el slogan traducido -->
+            <div class="ethos-slogan">TRUST THE JOURNEY. TRACK THE IMPACT.</div>
         </div>
 
-    </div>
+    </div> <!-- ✔ cierre del ethos-header -->
 
-    <a href="donar.html" class="cta">.</a> <!-- texto se reemplaza dinámicamente -->
+    <!-- ✔ Botón dentro de la sección -->
+    <a href="donar.html" class="cta">Comenzar</a>
 
+    <!-- ✔ Mensaje dinámico dentro de la sección -->
     <h2 id="mensaje-dinamico"></h2>
 
-    <div class="mini-box"></div> <!-- texto reemplazado dinámicamente -->
+    <!-- ✔ Mini box dentro de la sección HERO -->
+    <div class="mini-box">
+        Construyendo credibilidad a través de transparencia, trazabilidad y legitimidad.
+    </div>
 
 </section>
 
 
 
-<!-- ========================================
-     FOOTER
-========================================= -->
+
+
 <footer>
     <p>© 2025 Ethos — Construyendo confianza.</p>
 
@@ -62,57 +67,39 @@
     </div>
 </footer>
 
+<script>
+  const mensajes = [
+    "Recibí reportes claros y auditables para seguir el impacto de cada contribución.",
+    "Transparencia total desde el primer segundo: cada aporte queda registrado y verificado."
+  ];
+
+  const elegido = mensajes[Math.floor(Math.random() * mensajes.length)];
+
+  document.getElementById("mensaje-dinamico").innerText = elegido;
+</script>
 
 
-<!-- ========================================
-     TRADUCCIONES
-========================================= -->
+  
 
 <script>
 const translations = {
   es: {
-    slogan: "CONFIÁ EN EL CAMINO. SEGUÍ EL IMPACTO.",
     boton: "Comenzar",
     box: "Construyendo credibilidad a través de transparencia, trazabilidad y legitimidad.",
-    mensajes: [
-        "Recibí reportes claros y auditables para seguir el impacto de cada contribución.",
-        "Transparencia total desde el primer segundo: cada aporte queda registrado y verificado."
-    ]
+    mensaje1: "Recibí reportes claros y auditables para seguir el impacto de cada contribución.",
+    mensaje2: "Transparencia total desde el primer segundo: cada aporte queda registrado y verificado."
   },
   en: {
-    slogan: "TRUST THE JOURNEY. TRACK THE IMPACT.",
     boton: "Start",
     box: "Building credibility through transparency, traceability and legitimacy.",
-    mensajes: [
-        "Receive clear and auditable reports to track the impact of every contribution.",
-        "Full transparency from the first second: every contribution is recorded and verified."
-    ]
+    mensaje1: "Receive clear and auditable reports to track the impact of every contribution.",
+    mensaje2: "Full transparency from the first second: every contribution is recorded and verified."
   }
 };
 </script>
 
 
-<!-- ========================================
-     APLICAR IDIOMA SEGÚN <html lang="">
-========================================= -->
-<script>
-// detectar idioma del html
-const lang = document.documentElement.lang === "en" ? "en" : "es";
 
-// slogan
-document.querySelector(".ethos-slogan").innerText = translations[lang].slogan;
-
-// botón
-document.querySelector(".cta").innerText = translations[lang].boton;
-
-// mini-box
-document.querySelector(".mini-box").innerText = translations[lang].box;
-
-// mensaje dinámico
-const mensajes = translations[lang].mensajes;
-document.getElementById("mensaje-dinamico").innerText =
-  mensajes[Math.floor(Math.random() * mensajes.length)];
-</script>
 
 </body>
 </html>
