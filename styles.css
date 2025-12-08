@@ -578,3 +578,24 @@ html {
     font-weight: 600;
     color: var(--azul-profundo);
 }
+
+
+
+.mini-box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+    padding: 10px 18px;
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 6px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+
+    color: white;
+    background: rgba(255,255,255,0.05); /* sutil */
+    backdrop-filter: blur(4px);          /* minimalismo moderno */
+}
