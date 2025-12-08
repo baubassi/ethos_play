@@ -137,26 +137,31 @@ function applyLanguage(lang) {
     localStorage.setItem("ethos-lang", lang);
 }
 
-// cargar preferencia o default español
-const savedLang = localStorage.getItem("ethos-lang") || "es";
-applyLanguage(savedLang);
+<script>
+document.addEventListener("DOMContentLoaded", () => {
 
-// eventos click en botones
-document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-        applyLanguage(btn.dataset.lang);
+    // Idioma guardado o inglés por defecto
+    const savedLang = localStorage.getItem("ethos-lang") || "en";
+
+    // Aplicar idioma apenas carga la página
+    setLang(savedLang);
+
+    // Botones de banderas
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            
+            const lang = btn.dataset.lang;
+
+            // Guardar idioma elegido
+            localStorage.setItem("ethos-lang", lang);
+
+            // Cambiar idioma actual
+            setLang(lang);
+        });
     });
 });
 </script>
 
-
-    document.querySelectorAll(".lang-btn").forEach(btn => {
-  btn.addEventListener("click", () => {
-      const lang = btn.dataset.lang;
-      localStorage.setItem("ethos-lang", lang);  // ⭐ GUARDA idioma
-      location.reload();                         // ⭐ Recarga la página
-  });
-});
 
 
 
