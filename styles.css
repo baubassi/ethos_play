@@ -257,7 +257,6 @@ body {
 ================================ */
 @media (max-width: 480px) {
 
-    /* Ajustes previos del dropdown */
     .dropdown {
         top: 10px;
         right: 10px;
@@ -266,14 +265,17 @@ body {
     .dropdown-btn {
         transform: scale(0.9);
     }
+}  /*  🔥 ACÁ SE CIERRA LA PRIMERA  */
+
 
     /* ============ HERO RESPONSIVE ============ */
 
+/* ============ HERO RESPONSIVE ============ */
 @media (max-width: 480px) {
 
     .ethos-header {
-        gap: 22px;                /* ↓ distancia icono ↔ texto */
-        align-items: flex-start;  /* evita desalineación vertical rara */
+        gap: 22px;
+        align-items: flex-start;
     }
 
     .ethos-icon {
@@ -285,11 +287,10 @@ body {
     .ethos-icon .bars span {
         height: 60px;
         width: 5px;
-        gap: 18px;
     }
 
     .ethos-text {
-        font-size: 88px;          /* ↓ muy importante */
+        font-size: 88px;
         line-height: 0.82;
     }
 
@@ -299,8 +300,6 @@ body {
         margin-top: 8px;
     }
 }
-
-
 
 /* ================================
    LOGO ETHOS (barras + texto)
