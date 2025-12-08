@@ -27,11 +27,13 @@ body {
     height: 100vh;
     background: linear-gradient(to bottom right, var(--azul-profundo), var(--celeste));
     color: var(--blanco);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;   /* YA NO APRIETA TODO */
-    align-items: center;
-    padding-top: 80px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 0 20px; 
+
 }
 
 .hero h1 {
