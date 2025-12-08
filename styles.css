@@ -261,15 +261,15 @@ body {
 .ethos-logo {
     display: flex;
     align-items: center;
-    gap: 32px;              /* separación más fiel al logo */
+    gap: 40px;               /* separación más real */
     margin-bottom: 25px;
 }
 
-/* Ícono cuadrado + barras */
+/* ÍCONO */
 .ethos-logo .icon {
-    width: 115px;           /* levemente más chico para que matchee mejor */
-    height: 115px;
-    border: 9px solid white;
+    width: 150px;            /* MÁS grande para que destaque */
+    height: 150px;
+    border: 10px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -277,23 +277,22 @@ body {
 
 .ethos-logo .icon .bars {
     display: flex;
-    gap: 24px;              /* separación real entre barras */
+    gap: 28px;               /* separación amplia como en el logo */
 }
 
 .ethos-logo .icon .bars span {
-    width: 11px;            /* más finas, igual que el logo real */
-    height: 82px;           /* proporción exacta respecto al cuadrado */
+    width: 14px;             /* barras más gruesas */
+    height: 105px;           /* barras más altas → ahora sí se ven */
     background: white;
 }
 
-/* Texto ETHOS */
+/* TEXTO ETHOS */
 .ethos-text {
     font-family: 'Playfair Display', serif;
-    font-size: 86px;        /* tamaño que matchea la imagen */
+    font-size: 120px;        /* MUCHÍSIMO más grande, como el logo real */
     font-weight: 700;
     color: white;
-    letter-spacing: 0.5px;  /* muy sutil, como el logo original */
-    margin-top: 6px;        /* alineación óptica vertical */
+    letter-spacing: 1px;
 }
 
 
