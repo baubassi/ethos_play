@@ -304,11 +304,13 @@ body {
 /* ETHOS */
 .ethos-text {
     font-family: 'Cormorant Infant', serif;
+    font-weight: 900;
     font-size: 190px;
-    font-weight: 1000;
     color: white;
-    line-height: 0.8;   /* <-- ACÁ */
+    line-height: 0.9;     /* más seguro */
+    transform: none !important;
 }
+
 
 /* Slogan */
 .ethos-slogan {
