@@ -653,36 +653,36 @@ html {
     top: 15px;
     right: 15px;
     display: flex;
-    gap: 6px;       /* un poco más compacto */
+    gap: 6px;
     z-index: 3000;
 }
 
-/* Botones de bandera */
 .lang-btn {
-    background: none !important;   /* sin fondo */
-    border: none !important;       /* sin borde */
+    background: none !important;
+    border: none !important;
     padding: 0;
     margin: 0;
-    font-size: 24px;               /* tamaño reducido */
+    font-size: 24px;
     cursor: pointer;
     line-height: 1;
     transition: transform 0.15s ease;
 }
 
-/* Efecto hover */
+/* Hover suave */
 .lang-btn:hover {
     transform: scale(1.12);
 }
 
-/* Cuando está activa → solo leve opacidad, sin recuadros */
+/* Activa: SIN OPACIDAD */
 .lang-btn.active {
-    opacity: 0.75;
+    opacity: 1 !important;      /* siempre igual */
 }
 
-/* Evitar recuadro azul en Safari/iOS */
+/* Evitar recuadros azules en iPhone */
 .lang-btn:focus,
 .lang-btn:active {
     outline: none !important;
     background: none !important;
     box-shadow: none !important;
 }
+
