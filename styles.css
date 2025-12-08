@@ -641,3 +641,37 @@ html {
     width: fit-content;
 }
 
+
+
+/* =====================================
+   BOTÓN DE IDIOMA (arriba derecha)
+====================================== */
+.lang-switch {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    gap: 8px;
+    z-index: 3000;
+}
+
+.lang-btn {
+    background: white;
+    border: 2px solid #062B58;
+    color: #062B58;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.lang-btn:hover {
+    background: #062B58;
+    color: white;
+}
+
+.lang-btn.active {
+    background: #062B58;
+    color: white;
+}
