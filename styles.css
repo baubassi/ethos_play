@@ -656,20 +656,19 @@ html {
 }
 
 .lang-btn {
-    background: white;
-    border: 2px solid #062B58;
-    color: #062B58;
-    font-size: 20px;
-    cursor: pointer;
-    padding: 6px 10px;
-    border-radius: 8px;
-    transition: 0.2s ease;
+    background: none;      /* sin fondo */
+    border: none;          /* sin borde */
+    padding: 0;            /* sin padding */
+    margin: 0;             /* sin margen extra */
+    font-size: 28px;       /* tamaño de la bandera */
+    cursor: pointer;       /* cursor de botón */
+    line-height: 1;        /* elimina espacio extra */
 }
 
 .lang-btn:hover {
-    background: #062B58;
-    color: white;
+    transform: scale(1.15);   /* efecto suave */
 }
+
 
 .lang-btn.active {
     background: #062B58;
