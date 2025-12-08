@@ -258,21 +258,17 @@ body {
 /* ================================
    LOGO ETHOS (barras + texto)
 ================================ */
-/* ===== CONTENEDOR GENERAL ===== */
-
-.ethos-logo {
+.ethos-header {
     display: flex;
-    align-items: center;
-    gap: 48px;                       /* separación real ícono-texto */
-    margin-bottom: 25px;
+    align-items: center;      /* Icono y texto alineados verticalmente */
+    gap: 40px;                /* Distancia entre icono y bloque de texto */
 }
 
-/* ===== ÍCONO CUADRADO CON BARRAS ===== */
-
+/* Icono */
 .ethos-icon {
-    width: 180px;                    /* tamaño proporcional al logo */
-    height: 160px;
-    border: 10px solid white;        /* borde grueso del original */
+    width: 180px;
+    height: 180px;
+    border: 12px solid #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -280,33 +276,39 @@ body {
 
 .ethos-icon .bars {
     display: flex;
-    gap: 32px;                       /* separación real entre barras */
+    gap: 32px;
 }
 
 .ethos-icon .bars span {
-    width: 10px;                     /* grosor de barra real */
-    height: 110px;                   /* altura real de las barras */
+    width: 16px;
+    height: 125px;
     background: white;
 }
 
-/* ===== TEXTO ETHOS ===== */
-
-.ethos-text {
-    font-family: 'Playfair Display', serif;   /* fuente igual al logo */
-    font-size: 150px;                         /* tamaño grande real */
-    font-weight: 700;
-    color: white;
-    letter-spacing: 1px;                      /* leve tracking */
+/* Bloque Ethos + Slogan */
+.ethos-text-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1; /* Mantiene texto y slogan juntos visualmente */
 }
 
-/* SLOGAN */
+/* ETHOS */
+.ethos-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 150px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Slogan */
 .ethos-slogan {
     font-family: 'Inter', sans-serif;
-    font-size: 20px;                /* ajustalo si querés más chico */
+    font-size: 15px;
     font-weight: 500;
-    letter-spacing: 4px;            /* similar al logo original */
-    color: white;
-    opacity: 0.9;                   /* leve suavidad profesional */
+    letter-spacing: 4px;
+    margin-top: 12px; /* distancia exacta Ethos → slogan */
+    color: rgba(255,255,255,0.9);
 }
 
 
