@@ -259,6 +259,11 @@ body {
    RESPONSIVE
 ================================ */
 @media (max-width: 480px) {
+   .ethos-header {
+        transform: scale(0.55);
+        transform-origin: left top;
+        margin-left: -10px;   /* opcional: lo acerca al borde como en desktop */
+    }
     .dropdown {
         top: 10px;
         right: 10px;
@@ -279,8 +284,8 @@ body {
     }
 
     .ethos-icon {
-        width: 55px;             
-        height: 35px;
+        width: 105px;             
+        height: 95px;
         border-width: 5px;
     }
 
