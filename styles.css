@@ -255,46 +255,48 @@ body {
 /* ================================
    RESPONSIVE (MÓVIL)
 ================================ */
+/* ================================
+   RESPONSIVE — FIX LOGO ETHOS
+================================ */
 @media (max-width: 480px) {
 
-    /* Dropdown ajustes */
-    .dropdown {
-        top: 10px;
-        right: 10px;
-    }
-
-    .dropdown-btn {
-        transform: scale(0.9);
-    }
-
-    /* Logo Ethos */
+    /* El bloque pasa de horizontal → vertical */
     .ethos-header {
-        gap: 22px;
-        align-items: flex-start;
+        flex-direction: column;     /* 🔥 CLAVE */
+        align-items: center;        /* centra todo */
+        gap: 14px;                  /* menor distancia */
+        text-align: center;         /* centra slogan */
     }
 
+    /* Icono reducido */
     .ethos-icon {
-        width: 105px;
-        height: 95px;
+        width: 95px;
+        height: 85px;
         border-width: 5px;
     }
 
     .ethos-icon .bars span {
-        height: 60px;
+        height: 55px;
         width: 5px;
+        gap: 14px;
     }
 
+    /* Texto “Ethos” más pequeño */
     .ethos-text {
-        font-size: 88px;
-        line-height: 0.82;
+        font-size: 72px;            /* 🔥 antes 190px → ahora entra perfecto */
+        line-height: 0.85;
+        text-align: center;
     }
 
+    /* Slogan más chico */
     .ethos-slogan {
-        font-size: 10px;
-        letter-spacing: 2.2px;
-        margin-top: 8px;
+        font-size: 9.5px;
+        letter-spacing: 2px;
+        margin-top: 6px;
+        text-align: center;
     }
 }
+
 
 
 /* ================================
