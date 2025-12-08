@@ -2,15 +2,11 @@
    PALETA ETHOS
 ================================ */
 :root {
-    --azul-profundo: #1A2A6C;
+    --azul-profundo: #083468;
     --celeste: #2E8BC0;
     --blanco: #FFFFFF;
     --gris: #F4F6F7;
     --negro: #111111;
-
-    /* Colores Mercado Pago */
-    --mp-amarillo: #FEE275;
-    --mp-azul: #002E6D;
 }
 
 /* ================================
@@ -266,7 +262,7 @@ body {
 
 /* Icono */
 .ethos-icon {
-    width: 180px;
+    width: 175px;
     height: 155px;
     border: 8px solid #ffffff;
     display: flex;
