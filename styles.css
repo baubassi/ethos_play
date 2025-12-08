@@ -740,3 +740,19 @@ html {
         gap: 6px;
     }
 }
+
+/* Ajustes SOLO para pantallas chicas */
+@media (max-width: 480px) {
+
+    .lang-switch {
+        top: 10px;         /* baja un poquito */
+        right: 10px;       /* más cerca del borde */
+        gap: 4px;          /* menos separación */
+    }
+
+    .lang-btn {
+        font-size: 20px !important;  /* más chicas en móvil */
+        line-height: 1;
+    }
+}
+
