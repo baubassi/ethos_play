@@ -258,50 +258,46 @@ body {
 /* ============================================
    RESPONSIVE LOGO ETHOS — versión anterior FIX
 =============================================== */
+/* ================================
+   LOGO ETHOS — MOBILE
+================================ */
 @media (max-width: 480px) {
 
     .ethos-header {
-        gap: 18px;                 /* más compacto */
+        gap: 18px;
         align-items: center;
         justify-content: center;
-        flex-wrap: nowrap;         /* evita que se rompa */
         width: 100%;
     }
 
     .ethos-icon {
-        width: 85px;
-        height: 78px;
-        border-width: 5px;
+        width: 95px;
+        height: 85px;
+        border-width: 6px;
     }
 
     .ethos-icon .bars {
-        gap: 16px;
+        gap: 18px;
     }
 
     .ethos-icon .bars span {
-        width: 5px;
-        height: 52px;
+        width: 6px;
+        height: 60px;
     }
 
     .ethos-text {
-        font-size: 60px;       /* 🔥 antes era gigante → ahora entra perfecto */
+        font-size: 82px;
         line-height: 0.82;
-        white-space: nowrap;   /* 🔥 evita que “Ethos” se corte */
+        white-space: nowrap;
     }
 
     .ethos-slogan {
         font-size: 9px;
-        letter-spacing: 1.9px;
+        letter-spacing: 2px;
+        white-space: nowrap;
         margin-top: 6px;
-        white-space: nowrap;   /* 🔥 no se corta */
-    }
-
-    .ethos-text-block {
-        align-items: flex-start;  
     }
 }
-
-
 
 
 /* ================================
