@@ -269,58 +269,34 @@ body {
 
     /* ============ HERO RESPONSIVE ============ */
 
-    .hero {
-        padding-top: 120px;         /* aire arriba para que no tape la barra */
-        height: auto;               /* evita recortes en iPhone */
-        min-height: 100vh;
+@media (max-width: 480px) {
+
+    .ethos-header {
+        gap: 22px;                /* ↓ distancia icono ↔ texto */
+        align-items: flex-start;  /* evita desalineación vertical rara */
     }
 
-    /* Logo Ethos */
     .ethos-icon {
-        width: 120px;               /* más chico */
-        height: 110px;
-        border-width: 6px;
+        width: 105px;             
+        height: 95px;
+        border-width: 5px;
     }
 
     .ethos-icon .bars span {
-        height: 70px;               /* antes 100px */
-        width: 6px;
+        height: 60px;
+        width: 5px;
+        gap: 18px;
     }
 
-    /* Texto ETHOS */
     .ethos-text {
-        font-size: 110px;           /* antes 190px */
-        line-height: 0.9;
+        font-size: 88px;          /* ↓ muy importante */
+        line-height: 0.82;
     }
 
-    /* Slogan debajo de Ethos */
     .ethos-slogan {
-        font-size: 11px;
-        letter-spacing: 2.5px;
-    }
-
-    /* Botón Comenzar */
-    .cta {
-        padding: 10px 18px;
-        font-size: 1rem;
-        margin-bottom: 28px;
-    }
-
-    /* Mensaje dinámico */
-    #mensaje-dinamico {
-        font-size: 0.95rem;
-        margin-top: 30px;
-        padding: 0 20px;
-        line-height: 1.3;
-    }
-
-    /* Mini-box */
-    .mini-box {
-        font-size: 11px;
-        letter-spacing: 0.3px;
-        padding: 10px 14px;
-        margin-top: 18px;
-        max-width: 90%;
+        font-size: 10px;
+        letter-spacing: 2.2px;
+        margin-top: 8px;
     }
 }
 
