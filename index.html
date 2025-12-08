@@ -91,17 +91,51 @@ const translations = {
   es: {
     boton: "Comenzar",
     box: "Construyendo credibilidad a través de transparencia, trazabilidad y legitimidad.",
-    mensaje1: "Recibí reportes claros y auditables para seguir el impacto de cada contribución.",
-    mensaje2: "Transparencia total desde el primer segundo: cada aporte queda registrado y verificado."
+    mensajes: [
+      "Recibí reportes claros y auditables para seguir el impacto de cada contribución.",
+      "Transparencia total desde el primer segundo: cada aporte queda registrado y verificado."
+    ]
   },
   en: {
     boton: "Start",
     box: "Building credibility through transparency, traceability and legitimacy.",
-    mensaje1: "Receive clear and auditable reports to track the impact of every contribution.",
-    mensaje2: "Full transparency from the first second: every contribution is recorded and verified."
+    mensajes: [
+      "Receive clear and auditable reports to track the impact of every contribution.",
+      "Full transparency from the first second: every contribution is recorded and verified."
+    ]
   }
 };
+
+function applyLanguage(lang) {
+    document.querySelector(".ethos-slogan").innerText = translations[lang].slogan;
+    document.querySelector(".cta").innerText = translations[lang].boton;
+    document.querySelector(".mini-box").innerText = translations[lang].box;
+
+    const mensajes = translations[lang].mensajes;
+    document.getElementById("mensaje-dinamico").innerText =
+        mensajes[Math.floor(Math.random() * mensajes.length)];
+
+    // marcar botón activo
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.lang === lang);
+    });
+
+    // guardar preferencia
+    localStorage.setItem("ethos-lang", lang);
+}
+
+// cargar preferencia o default español
+const savedLang = localStorage.getItem("ethos-lang") || "es";
+applyLanguage(savedLang);
+
+// eventos click en botones
+document.querySelectorAll(".lang-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+        applyLanguage(btn.dataset.lang);
+    });
+});
 </script>
+
 
 
 
