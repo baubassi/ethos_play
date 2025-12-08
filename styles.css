@@ -270,9 +270,9 @@ body {
 /* ===== ÍCONO CUADRADO CON BARRAS ===== */
 
 .ethos-icon {
-    width: 160px;                    /* tamaño proporcional al logo */
-    height: 160px;
-    border: 12px solid white;        /* borde grueso del original */
+    width: 180px;                    /* tamaño proporcional al logo */
+    height: 180px;
+    border: 10px solid white;        /* borde grueso del original */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +284,7 @@ body {
 }
 
 .ethos-icon .bars span {
-    width: 16px;                     /* grosor de barra real */
+    width: 10px;                     /* grosor de barra real */
     height: 125px;                   /* altura real de las barras */
     background: white;
 }
