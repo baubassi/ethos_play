@@ -93,10 +93,7 @@
 
   document.getElementById("mensaje-dinamico").innerText = elegido;
 </script>
-
-
-  
-
+<script>
 const translations = {
   es: {
     slogan: "TRUST THE JOURNEY. TRACK THE IMPACT.",
@@ -131,12 +128,10 @@ function applyLanguage(lang) {
     document.getElementById("mensaje-dinamico").innerText =
         msgs[Math.floor(Math.random() * msgs.length)];
 
-    // marcar bandera activa
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.lang === lang);
     });
 
-    // guardar elección
     localStorage.setItem("ethos-lang", lang);
 }
 
@@ -145,13 +140,10 @@ function applyLanguage(lang) {
 // ================================================
 document.addEventListener("DOMContentLoaded", () => {
 
-    // idioma guardado o inglés por defecto
     const savedLang = localStorage.getItem("ethos-lang") || "en";
 
-    // aplicar idioma inicial
     applyLanguage(savedLang);
 
-    // listeners de banderas
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.addEventListener("click", () => {
             const lang = btn.dataset.lang;
