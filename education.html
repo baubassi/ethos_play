@@ -82,9 +82,9 @@
 
 </section>
 
-    <footer class="footer-bar">
+<footer class="footer-bar">
 
-    <div class="footer-left">
+    <div class="footer-left" id="footer-left-edu">
         © 2025 Ethos — Construyendo confianza.
     </div>
 
@@ -98,6 +98,11 @@
     </div>
 
 </footer>
+
+
+<!-- ===================================================== -->
+<!-- =============== SISTEMA DE TRADUCCIÓN =============== -->
+<!-- ===================================================== -->
 
 <script>
 const translationsEdu = {
@@ -115,7 +120,9 @@ const translationsEdu = {
         i3_d: "Descripción breve de la institución orientada a educación.",
 
         i4_t: "Institución 4",
-        i4_d: "Descripción breve de la institución orientada a educación."
+        i4_d: "Descripción breve de la institución orientada a educación.",
+
+        footer_left: "© 2025 Ethos — Construyendo confianza."
     },
 
     en: {
@@ -132,7 +139,9 @@ const translationsEdu = {
         i3_d: "Brief description of the institution focused on education.",
 
         i4_t: "Institution 4",
-        i4_d: "Brief description of the institution focused on education."
+        i4_d: "Brief description of the institution focused on education.",
+
+        footer_left: "© 2025 Ethos — Building trust."
     }
 };
 
@@ -149,60 +158,28 @@ function setLangEdu(lang) {
     document.querySelectorAll(".inst-desc").forEach(el => {
         el.innerText = translationsEdu[lang][el.dataset.key];
     });
+
+    // 🔥 FOOTER
+    document.querySelector("#footer-left-edu").innerText = translationsEdu[lang].footer_left;
 }
 
 // -------- AUTO-EJECUCIÓN --------
 document.addEventListener("DOMContentLoaded", () => {
 
-    // idioma guardado o inglés por defecto
     const savedLang = localStorage.getItem("ethos-lang") || "en";
 
-    // aplica idioma apenas carga
     setLangEdu(savedLang);
 
-    // botones de bandera
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.addEventListener("click", () => {
-
             const lang = btn.dataset.lang;
-
-            // guardar idioma preferido
             localStorage.setItem("ethos-lang", lang);
-
-            // aplicar idioma en education
             setLangEdu(lang);
         });
     });
 
 });
 </script>
-
-    <script>
-// Lee el idioma al cargar la página de UBA
-document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("ethos-lang") || "en";
-
-    // Guardamos el idioma como atributo del body (útil si querés CSS condicional)
-    document.body.dataset.lang = savedLang;
-
-    // Si existe la función de traducción, la ejecuta
-    if (typeof applyLang === "function") {
-        applyLang(savedLang);
-    }
-});
-
-// Permite cambiar idioma si tu amigo agrega botones o menú
-function changeLang(lang) {
-    localStorage.setItem("ethos-lang", lang);
-    document.body.dataset.lang = lang;
-
-    if (typeof applyLang === "function") {
-        applyLang(lang);
-    }
-}
-</script>
-
-
 
 </body>
 </html>
