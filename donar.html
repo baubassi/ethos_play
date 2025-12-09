@@ -113,5 +113,26 @@ document.querySelectorAll(".lang-btn").forEach(btn => {
 });
 </script>
 
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const savedLang = localStorage.getItem("ethos-lang") || "en";
+
+    setLangDonar(savedLang);
+
+    document.querySelectorAll(".lang-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+
+            const lang = btn.dataset.lang;
+
+            localStorage.setItem("ethos-lang", lang);
+
+            setLangDonar(lang);
+        });
+    });
+});
+</script>
+
+
 </body>
 </html>
