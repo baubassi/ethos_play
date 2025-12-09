@@ -61,7 +61,7 @@
 </footer>
 
 <script>
-const translations = {
+const translationsDonar = {
     es: {
         title: "¿A qué área te gustaría aportar?",
         edu_t: "Educación",
@@ -92,47 +92,50 @@ const translations = {
     }
 };
 
-function setLang(lang) {
-    document.querySelector("#title-area").innerText = translations[lang].title;
+// ----------- FUNCIÓN PRINCIPAL -----------
+function setLangDonar(lang) {
+
+    document.querySelector("#title-area").innerText = translationsDonar[lang].title;
 
     document.querySelectorAll(".card-title").forEach(el => {
-        el.innerText = translations[lang][el.dataset.key];
+        el.innerText = translationsDonar[lang][el.dataset.key];
     });
 
     document.querySelectorAll(".card-text").forEach(el => {
-        el.innerText = translations[lang][el.dataset.key];
+        el.innerText = translationsDonar[lang][el.dataset.key];
     });
 
-    document.querySelector("#footer-text").innerText = translations[lang].footer;
-    document.querySelector("#faq-link").innerText = translations[lang].faq;
-    document.querySelector("#contact-link").innerText = translations[lang].contacto;
+    document.querySelector("#footer-text").innerText = translationsDonar[lang].footer;
+    document.querySelector("#faq-link").innerText = translationsDonar[lang].faq;
+
+    if (document.querySelector("#contact-link")) {
+        document.querySelector("#contact-link").innerText = translationsDonar[lang].contacto;
+    }
 }
 
-document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.addEventListener("click", () => setLang(btn.dataset.lang));
-});
-</script>
-
-    <script>
+// ----------- AUTO-EJECUCIÓN -----------
 document.addEventListener("DOMContentLoaded", () => {
 
+    // Idioma guardado o inglés por defecto
     const savedLang = localStorage.getItem("ethos-lang") || "en";
 
+    // Aplicar idioma al cargar
     setLangDonar(savedLang);
 
+    // Listener de banderas
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.addEventListener("click", () => {
-
             const lang = btn.dataset.lang;
 
+            // Guardar preferencia
             localStorage.setItem("ethos-lang", lang);
 
+            // Cambiar idioma
             setLangDonar(lang);
         });
     });
 });
 </script>
-
 
 </body>
 </html>
