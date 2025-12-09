@@ -756,3 +756,6 @@ html {
     }
 }
 
+.mini-box u {
+    text-decoration: underline !important;
+}
