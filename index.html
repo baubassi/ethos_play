@@ -97,7 +97,6 @@
 
   
 
-<script>
 const translations = {
   es: {
     slogan: "TRUST THE JOURNEY. TRACK THE IMPACT.",
@@ -119,53 +118,47 @@ const translations = {
   }
 };
 
+// ================================================
+// APLICAR IDIOMA
+// ================================================
 function applyLanguage(lang) {
+
     document.querySelector(".ethos-slogan").innerText = translations[lang].slogan;
     document.querySelector(".cta").innerText = translations[lang].boton;
     document.querySelector(".mini-box").innerText = translations[lang].box;
 
-    const mensajes = translations[lang].mensajes;
+    const msgs = translations[lang].mensajes;
     document.getElementById("mensaje-dinamico").innerText =
-        mensajes[Math.floor(Math.random() * mensajes.length)];
+        msgs[Math.floor(Math.random() * msgs.length)];
 
-    // marcar botón activo
+    // marcar bandera activa
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.lang === lang);
     });
 
-    // guardar preferencia
+    // guardar elección
     localStorage.setItem("ethos-lang", lang);
 }
 
-<script>
+// ================================================
+// AUTO-EJECUCIÓN AL CARGAR INDEX
+// ================================================
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Idioma guardado o inglés por defecto
+    // idioma guardado o inglés por defecto
     const savedLang = localStorage.getItem("ethos-lang") || "en";
 
-    // Aplicar idioma apenas carga la página
-    setLang(savedLang);
+    // aplicar idioma inicial
+    applyLanguage(savedLang);
 
-    // Botones de banderas
+    // listeners de banderas
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.addEventListener("click", () => {
-            
             const lang = btn.dataset.lang;
-
-            // Guardar idioma elegido
-            localStorage.setItem("ethos-lang", lang);
-
-            // Cambiar idioma actual
-            setLang(lang);
+            applyLanguage(lang);
         });
     });
 });
 </script>
-
-
-
-
-
-
 </body>
 </html>
