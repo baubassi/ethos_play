@@ -51,6 +51,7 @@
 
     </div>
 </section>
+
 <footer class="footer-bar">
 
     <div class="footer-left" id="footer-text">
@@ -104,19 +105,26 @@ const translationsDonar = {
 // ----------- FUNCIÓN PRINCIPAL -----------
 function setLangDonar(lang) {
 
+    // Título principal
     document.querySelector("#title-area").innerText = translationsDonar[lang].title;
 
+    // Títulos de tarjetas
     document.querySelectorAll(".card-title").forEach(el => {
         el.innerText = translationsDonar[lang][el.dataset.key];
     });
 
+    // Textos de tarjetas
     document.querySelectorAll(".card-text").forEach(el => {
         el.innerText = translationsDonar[lang][el.dataset.key];
     });
 
+    // Footer
     document.querySelector("#footer-text").innerText = translationsDonar[lang].footer;
+
+    // FAQ
     document.querySelector("#faq-link").innerText = translationsDonar[lang].faq;
 
+    // Contacto (si existe)
     if (document.querySelector("#contact-link")) {
         document.querySelector("#contact-link").innerText = translationsDonar[lang].contacto;
     }
