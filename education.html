@@ -120,7 +120,9 @@ const translationsEdu = {
     }
 };
 
+// -------- FUNCIÓN PRINCIPAL --------
 function setLangEdu(lang) {
+
     document.querySelector("#title-edu").innerText = translationsEdu[lang].title;
     document.querySelector("#subtitle-edu").innerText = translationsEdu[lang].subtitle;
 
@@ -133,37 +135,31 @@ function setLangEdu(lang) {
     });
 }
 
-document.querySelectorAll(".lang-btn").forEach(btn => {
-    btn.addEventListener("click", () => setLangEdu(btn.dataset.lang));
-});
-</script>
-
-    <script>
+// -------- AUTO-EJECUCIÓN --------
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Idioma guardado o inglés por defecto
+    // idioma guardado o inglés por defecto
     const savedLang = localStorage.getItem("ethos-lang") || "en";
 
-    // Aplicar idioma apenas carga la página (usa la función de EDUCATION)
+    // aplica idioma apenas carga
     setLangEdu(savedLang);
 
-    // Botones de banderas
+    // botones de bandera
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.addEventListener("click", () => {
 
             const lang = btn.dataset.lang;
 
-            // Guardar elección
+            // guardar idioma preferido
             localStorage.setItem("ethos-lang", lang);
 
-            // Cambiar idioma en EDUCATION
+            // aplicar idioma en education
             setLangEdu(lang);
         });
     });
+
 });
 </script>
-
-
     
 </body>
 </html>
