@@ -639,6 +639,8 @@ html {
     background: rgba(255,255,255,0.05);
     backdrop-filter: blur(4px); /* efecto sutil */
     width: fit-content;
+
+    text-decoration: underline !important;
 }
 
 
@@ -756,6 +758,4 @@ html {
     }
 }
 
-.mini-box u {
-    text-decoration: underline !important;
-}
+
