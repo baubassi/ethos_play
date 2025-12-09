@@ -178,30 +178,6 @@ document.addEventListener("DOMContentLoaded", () => {
 </script>
 
 
-    <script>
-// Lee el idioma al cargar la página de UBA
-document.addEventListener("DOMContentLoaded", () => {
-    const savedLang = localStorage.getItem("ethos-lang") || "en";
-
-    // Guardamos el idioma como atributo del body (útil si querés CSS condicional)
-    document.body.dataset.lang = savedLang;
-
-    // Si existe la función de traducción, la ejecuta
-    if (typeof applyLang === "function") {
-        applyLang(savedLang);
-    }
-});
-
-// Permite cambiar idioma si tu amigo agrega botones o menú
-function changeLang(lang) {
-    localStorage.setItem("ethos-lang", lang);
-    document.body.dataset.lang = lang;
-
-    if (typeof applyLang === "function") {
-        applyLang(lang);
-    }
-}
-</script>
 
 </body>
 </html>
