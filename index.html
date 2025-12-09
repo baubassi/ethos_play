@@ -130,6 +130,8 @@ function applyLanguage(lang) {
     document.getElementById("mensaje-dinamico").innerText =
         msgs[Math.floor(Math.random() * msgs.length)];
 
+    document.querySelector("#footer-left-text").innerText = translations[lang].footer_left;
+
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.lang === lang);
     });
